@@ -135,7 +135,7 @@ set(CALAMARES_DESCRIPTION_SUMMARY "The distribution-independent installer framew
 #
 # Language en (source language) is added later. It isn't listed in
 # Transifex either. Get the list of languages and their status
-# from https://transifex.com/calamares/calamares/ , or (preferably)
+# from https://app.transifex.com/calamares/calamares/ , or (preferably)
 # use ci/txstats.py to automatically check.
 #
 # When adding a new language, take care that it is properly loaded
@@ -213,7 +213,7 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall")
 set(CMAKE_C_FLAGS_DEBUG "-Og -g")
 set(CMAKE_C_FLAGS_MINSIZEREL "-Os -DNDEBUG")
-set(CMAKE_C_FLAGS_RELEASE "-O4 -DNDEBUG")
+set(CMAKE_C_FLAGS_RELEASE "-O3 -DNDEBUG")
 set(CMAKE_C_FLAGS_RELWITHDEBINFO "-O2 -g")
 
 set(CMAKE_SHARED_LINKER_FLAGS "-Wl,--no-undefined -Wl,--fatal-warnings ${CMAKE_SHARED_LINKER_FLAGS}")
