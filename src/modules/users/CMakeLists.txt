@@ -3,11 +3,15 @@
 #   SPDX-FileCopyrightText: 2020 Adriaan de Groot <groot@kde.org>
 #   SPDX-License-Identifier: BSD-2-Clause
 #
-find_package(Qt5 ${QT_VERSION} CONFIG REQUIRED Core DBus Network)
+find_package(${qtname} ${QT_VERSION} CONFIG REQUIRED Core DBus Network)
 find_package(Crypt REQUIRED)
 
 # Add optional libraries here
-set(USER_EXTRA_LIB)
+set(USER_EXTRA_LIB
+    ${kfname}::CoreAddons
+    ${qtname}::DBus
+    ${CRYPT_LIBRARIES}
+)
 
 find_package(LibPWQuality)
 set_package_properties(LibPWQuality PROPERTIES PURPOSE "Extra checks of password quality")
@@ -41,19 +45,21 @@ set(_users_src
 )
 
 # This part of the code is shared with the usersq module
-calamares_add_library(
-    users_internal
-    EXPORT_MACRO PLUGINDLLEXPORT_PRO
-    TARGET_TYPE STATIC
-    NO_INSTALL
-    NO_VERSION
-    SOURCES
+add_library(users_internal
+    OBJECT
         ${_users_src}
-    LINK_LIBRARIES
-        KF5::CoreAddons
-        Qt5::DBus
-        ${CRYPT_LIBRARIES}
 )
+target_link_libraries(users_internal
+    PRIVATE
+        ${USER_EXTRA_LIB}
+        ${Calamares_LIBRARIES}
+        ${qtname}::Core
+        ${qtname}::Gui
+        ${qtname}::Widgets
+)
+target_compile_definitions(users_internal PUBLIC PLUGINDLLEXPORT_PRO)
+target_compile_options(users_internal PUBLIC -fPIC)
+calamares_automoc(users_internal)
 
 calamares_add_plugin(users
     TYPE viewmodule
@@ -80,8 +86,8 @@ calamares_add_test(
         TestGroupInformation.cpp
         ${_users_src} # Build again with test-visibility
     LIBRARIES
-        KF5::CoreAddons
-        Qt5::DBus # HostName job can use DBus to systemd
+        ${kfname}::CoreAddons
+        ${qtname}::DBus # HostName job can use DBus to systemd
         ${CRYPT_LIBRARIES} # SetPassword job uses crypt()
         ${USER_EXTRA_LIB}
 )
@@ -90,7 +96,7 @@ calamares_add_test(
     usershostnametest
     SOURCES TestSetHostNameJob.cpp SetHostNameJob.cpp
     LIBRARIES
-        Qt5::DBus # HostName job can use DBus to systemd
+        ${qtname}::DBus # HostName job can use DBus to systemd
 )
 
 calamares_add_test(
@@ -99,8 +105,8 @@ calamares_add_test(
         Tests.cpp
         ${_users_src} # Build again with test-visibility
     LIBRARIES
-        KF5::CoreAddons
-        Qt5::DBus # HostName job can use DBus to systemd
+        ${kfname}::CoreAddons
+        ${qtname}::DBus # HostName job can use DBus to systemd
         ${CRYPT_LIBRARIES} # SetPassword job uses crypt()
         ${USER_EXTRA_LIB}
 )

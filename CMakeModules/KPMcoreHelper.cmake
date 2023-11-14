@@ -11,15 +11,22 @@
 # library, which will add definition WITHOUT_KPMcore.
 #
 if(NOT TARGET calapmcore)
-    find_package(KPMcore 20.04.0)
-    set_package_properties(
-        KPMcore
-        PROPERTIES
-        URL "https://invent.kde.org/kde/kpmcore"
-        DESCRIPTION "KDE Partitioning library"
-        TYPE RECOMMENDED
-        PURPOSE "For disk partitioning support"
-    )
+    find_package(${kfname}Config CONFIG)
+    find_package(${kfname}I18n CONFIG)
+    find_package(${kfname}WidgetsAddons CONFIG)
+
+    if(NOT WITH_QT6)
+        # TODO: Qt6 how to detect the version of Qt that KPMCore needs?
+        find_package(KPMcore 20.04.0)
+        set_package_properties(
+            KPMcore
+            PROPERTIES
+            URL "https://invent.kde.org/kde/kpmcore"
+            DESCRIPTION "KDE Partitioning library"
+            TYPE RECOMMENDED
+            PURPOSE "For disk partitioning support"
+        )
+    endif()
 
     # Create an internal Calamares interface to KPMcore
     # and give it a nice alias name. If kpmcore is not found,
@@ -27,10 +34,10 @@ if(NOT TARGET calapmcore)
     add_library(calapmcore INTERFACE)
 
     if(KPMcore_FOUND)
-        find_package(Qt5 REQUIRED DBus) # Needed for KPMCore
-        find_package(KF5 REQUIRED I18n WidgetsAddons) # Needed for KPMCore
+        find_package(${qtname} REQUIRED DBus) # Needed for KPMCore
+        find_package(${kfname} REQUIRED I18n WidgetsAddons) # Needed for KPMCore
 
-        target_link_libraries(calapmcore INTERFACE kpmcore Qt5::DBus KF5::I18n KF5::WidgetsAddons)
+        target_link_libraries(calapmcore INTERFACE kpmcore ${qtname}::DBus ${kfname}::I18n ${kfname}::WidgetsAddons)
         target_include_directories(calapmcore INTERFACE ${KPMCORE_INCLUDE_DIR})
         # If there were KPMcore API variations, figure them out here
         # target_compile_definitions(calapmcore INTERFACE WITH_KPMcore)
