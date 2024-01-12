@@ -1,8 +1,8 @@
-name: nightly-opensuse
+name: nightly-ubuntu
 
 on:
   schedule:
-    - cron: "32 23 * * *"
+    - cron: "12 23 * * *"
   workflow_dispatch:
 
 env:
@@ -11,8 +11,6 @@ env:
   CMAKE_ARGS: |
     -DKDE_INSTALL_USE_QT_SYS_PATHS=ON
     -DCMAKE_BUILD_TYPE=Debug
-    -DBUILD_SCHEMA_TESTING=ON
-    -DBUILD_TESTING=ON
     -DBUILD_APPSTREAM=ON
     -DBUILD_APPDATA=ON
 
@@ -20,17 +18,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: docker://opensuse/tumbleweed
+      image: docker://ubuntu:devel
       options: --tmpfs /build:rw --user 0:0
     steps:
       - name: "prepare git"
         shell: bash
-        run: zypper --non-interactive in git-core jq curl
+        run: |
+            apt-get update
+            apt-get -y install git-core jq curl ninja-build
       - name: "prepare source"
         uses: calamares/actions/generic-checkout@v5
       - name: "install dependencies"
         shell: bash
-        run: ./ci/deps-opensuse.sh
+        run: ./ci/deps-ubuntu.sh
       - name: "build"
         shell: bash
         run: ./ci/build.sh
