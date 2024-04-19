@@ -9,6 +9,7 @@
 
 #include "Config.h"
 
+#include "ActiveDirectoryJob.h"
 #include "CreateUserJob.h"
 #include "MiscJobs.h"
 #include "SetHostNameJob.h"
@@ -654,6 +655,48 @@ Config::setRootPasswordSecondary( const QString& s )
     }
 }
 
+void
+Config::setActiveDirectoryUsed( bool used )
+{
+    m_activeDirectoryUsed = used;
+}
+
+bool
+Config::getActiveDirectoryEnabled() const
+{
+    return m_activeDirectory;
+}
+
+bool
+Config::getActiveDirectoryUsed() const
+{
+    return m_activeDirectoryUsed && m_activeDirectory;
+}
+
+void
+Config::setActiveDirectoryAdminUsername( const QString& s )
+{
+    m_activeDirectoryAdminUsername = s;
+}
+
+void
+Config::setActiveDirectoryAdminPassword( const QString& s )
+{
+    m_activeDirectoryAdminPassword = s;
+}
+
+void
+Config::setActiveDirectoryDomain( const QString& s )
+{
+    m_activeDirectoryDomain = s;
+}
+
+void
+Config::setActiveDirectoryIP( const QString& s )
+{
+    m_activeDirectoryIP = s;
+}
+
 QString
 Config::rootPassword() const
 {
@@ -911,6 +954,9 @@ Config::setConfigurationMap( const QVariantMap& configurationMap )
     m_sudoStyle = Calamares::getBool( configurationMap, "sudoersConfigureWithGroup", false ) ? SudoStyle::UserAndGroup
                                                                                              : SudoStyle::UserOnly;
 
+    // Handle Active Directory enablement
+    m_activeDirectory = Calamares::getBool( configurationMap, "allowActiveDirectory", false );
+
     // Handle *hostname* key and subkeys and legacy settings
     {
         bool ok = false;  // Ignored
@@ -985,6 +1031,15 @@ Config::createJobs() const
     if ( !m_sudoersGroup.isEmpty() )
     {
         j = new SetupSudoJob( m_sudoersGroup, m_sudoStyle );
+        jobs.append( Calamares::job_ptr( j ) );
+    }
+
+    if ( getActiveDirectoryUsed() )
+    {
+        j = new ActiveDirectoryJob( m_activeDirectoryAdminUsername,
+                                    m_activeDirectoryAdminPassword,
+                                    m_activeDirectoryDomain,
+                                    m_activeDirectoryIP );
         jobs.append( Calamares::job_ptr( j ) );
     }
 
