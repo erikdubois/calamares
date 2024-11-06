@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 ---
 $schema: https://json-schema.org/schema#
-$id: https://calamares.io/schemas/unpackfs
+$id: https://calamares.io/schemas/unpackfsc
 additionalProperties: false
 type: object
 properties:
@@ -15,9 +15,6 @@ properties:
                 source: { type: string }
                 sourcefs: { type: string }
                 destination: { type: string }
-                excludeFile: { type: string }
-                exclude: { type: array, items: { type: string } }
-                weight: { type: integer, exclusiveMinimum: 0 }
                 condition:
                     anyOf:
                       - type: boolean
