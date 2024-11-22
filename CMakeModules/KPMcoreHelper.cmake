@@ -36,7 +36,8 @@ if(NOT TARGET calapmcore)
 
     if(KPMcore_FOUND)
         find_package(${qtname} REQUIRED DBus) # Needed for KPMCore
-        find_package(${kfname} REQUIRED I18n WidgetsAddons) # Needed for KPMCore
+        find_package(${kfname}I18n REQUIRED) # Needed for KPMCore
+        find_package(${kfname}WidgetsAddons REQUIRED) # Needed for KPMCore
 
         target_link_libraries(calapmcore INTERFACE kpmcore ${qtname}::DBus ${kfname}::I18n ${kfname}::WidgetsAddons)
         target_include_directories(calapmcore INTERFACE ${KPMCORE_INCLUDE_DIR})
