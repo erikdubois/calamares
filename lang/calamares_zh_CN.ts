@@ -985,7 +985,7 @@ The installer will quit and all changes will be lost.</source>
       <location filename="../src/modules/locale/Config.cpp" line="381"/>
       <source>Set timezone to %1.</source>
       <comment>@action</comment>
-      <translation>设置时区维 %1。</translation>
+      <translation>设置时区为 %1。</translation>
     </message>
     <message>
       <location filename="../src/modules/locale/Config.cpp" line="418"/>

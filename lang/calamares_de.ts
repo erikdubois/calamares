@@ -4004,13 +4004,13 @@ Ausgabe:
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="105"/>
       <source>Clearing flags on partition &lt;strong&gt;%1&lt;/strong&gt;…</source>
       <comment>@status</comment>
-      <translation>Flags auf Partition &lt;strong&gt;%1&lt;/strong&gt; werden gelöscht…</translation>
+      <translation>Markierungen der Partition &lt;strong&gt;%1&lt;/strong&gt; werden gelöscht…</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="112"/>
       <source>Clearing flags on %1MiB &lt;strong&gt;%2&lt;/strong&gt; partition…</source>
       <comment>@status</comment>
-      <translation>Flags der %1MiB &lt;strong&gt;%2&lt;/strong&gt; Partition werden gelöscht…</translation>
+      <translation>Markierungen der %1MiB &lt;strong&gt;%2&lt;/strong&gt; Partition werden gelöscht…</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="117"/>
@@ -4022,19 +4022,19 @@ Ausgabe:
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="122"/>
       <source>Setting flags &lt;strong&gt;%2&lt;/strong&gt; on partition &lt;strong&gt;%1&lt;/strong&gt;…</source>
       <comment>@status</comment>
-      <translation>Flags &lt;strong&gt;%2&lt;/strong&gt; werden auf Partition &lt;strong&gt;%1&lt;/strong&gt; gesetzt…</translation>
+      <translation>Markierungen &lt;strong&gt;%2&lt;/strong&gt; der Partition &lt;strong&gt;%1&lt;/strong&gt; werden gesetzt…</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="130"/>
       <source>Setting flags &lt;strong&gt;%3&lt;/strong&gt; on %1MiB &lt;strong&gt;%2&lt;/strong&gt; partition…</source>
       <comment>@status</comment>
-      <translation>Flags &lt;strong&gt;%3&lt;/strong&gt; werden auf der Partition %1MiB &lt;strong&gt;%2&lt;/strong&gt; gesetzt…</translation>
+      <translation>Markierungen &lt;strong&gt;%3&lt;/strong&gt; der Partition %1MiB &lt;strong&gt;%2&lt;/strong&gt; werden gesetzt…</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="136"/>
       <source>Setting flags &lt;strong&gt;%1&lt;/strong&gt; on new partition…</source>
       <comment>@status</comment>
-      <translation>Flags &lt;strong&gt;%1&lt;/strong&gt; werden auf neuer Partition gesetzt…</translation>
+      <translation>Markierungen &lt;strong&gt;%1&lt;/strong&gt; der neuen Partition werden gesetzt…</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="149"/>
@@ -4705,7 +4705,7 @@ Ausgabe:
             You may now restart your device.</source>
       <comment>@info, %1 is the product name</comment>
       <translation>%1 wurde auf Ihrem Computer installiert.&lt;br/&gt;
-            Sie können Ihr Gerät nun neu starten.</translation>
+            Sie können Ihr Gerät nun neustarten.</translation>
     </message>
     <message>
       <location filename="../src/modules/finishedq/finishedq@mobile.qml" line="66"/>
@@ -4732,7 +4732,7 @@ Ausgabe:
       <location filename="../src/modules/keyboardq/keyboardq.qml" line="144"/>
       <source>&lt;b&gt;Keyboard model:&amp;nbsp;&amp;nbsp;&lt;/b&gt;</source>
       <comment>@label</comment>
-      <translation>&lt;b&gt;Tastatur Model:&amp;nbsp;&amp;nbsp;&lt;/b&gt;</translation>
+      <translation>&lt;b&gt;Tastaturmodell:&amp;nbsp;&amp;nbsp;&lt;/b&gt;</translation>
     </message>
     <message>
       <location filename="../src/modules/keyboardq/keyboardq.qml" line="185"/>
@@ -4750,7 +4750,7 @@ Ausgabe:
       <location filename="../src/modules/keyboardq/keyboardq.qml" line="311"/>
       <source>Type here to test your keyboard…</source>
       <comment>@label</comment>
-      <translation>Schreibe hier, um Ihre Tastatur zu testen ...</translation>
+      <translation>Schreibe Sie hier, um Ihre Tastatur zu testen...</translation>
     </message>
   </context>
   <context>
@@ -4765,7 +4765,7 @@ Ausgabe:
       <location filename="../src/modules/keyboardq/keyboardq-qt6.qml" line="144"/>
       <source>&lt;b&gt;Keyboard model:&amp;nbsp;&amp;nbsp;&lt;/b&gt;</source>
       <comment>@label</comment>
-      <translation>&lt;b&gt;Tastatur Model:&amp;nbsp;&amp;nbsp;&lt;/b&gt;</translation>
+      <translation>&lt;b&gt;Tastaturmodell:&amp;nbsp;&amp;nbsp;&lt;/b&gt;</translation>
     </message>
     <message>
       <location filename="../src/modules/keyboardq/keyboardq-qt6.qml" line="185"/>
@@ -4783,7 +4783,7 @@ Ausgabe:
       <location filename="../src/modules/keyboardq/keyboardq-qt6.qml" line="311"/>
       <source>Type here to test your keyboard…</source>
       <comment>@label</comment>
-      <translation>Schreibe hier, um Ihre Tastatur zu testen ...</translation>
+      <translation>Schreiben Sie hier, um Ihre Tastatur zu testen...</translation>
     </message>
   </context>
   <context>
@@ -4894,7 +4894,7 @@ Ausgabe:
       <location filename="../src/modules/packagechooserq/packagechooserq-qt6.qml" line="45"/>
       <source>LibreOffice is a powerful and free office suite, used by millions of people around the world. It includes several applications that make it the most versatile Free and Open Source office suite on the market.&lt;br/&gt;
                     Default option.</source>
-      <translation>LibreOffice ist eine mächtige und freie Office-Lösung, verwendet von Millionen von Menschen rund um den Globus. Sie enthäIt verschiedene Anwendungen, die LibreOffice zur vielseitigsten Open-Source-Lösung für Office-Anwendungen auf dem Markt machen.&lt;br/&gt;
+      <translation>LibreOffice ist eine mächtige und freie Office-Suite, verwendet von Millionen von Menschen rund um den Globus. Sie enthäIt verschiedene Anwendungen, die LibreOffice zur vielseitigsten Open-Source-Lösung für Office-Anwendungen auf dem Markt machen.&lt;br/&gt;
                     Standard-Option.</translation>
     </message>
     <message>
@@ -4905,7 +4905,7 @@ Ausgabe:
     <message>
       <location filename="../src/modules/packagechooserq/packagechooserq-qt6.qml" line="108"/>
       <source>If you don't want to install an office suite, just select No Office Suite. You can always add one (or more) later on your installed system as the need arrives.</source>
-      <translation>Wenn Sie keine Office-Suite installieren wollen, wählen Sie einfach Keine Office Suite. Sie können jederzeit eine oder mehrere zu Ihrem installierten System hinzufügen wenn nötig.</translation>
+      <translation>Wenn Sie keine Office-Suite installieren wollen, wählen Sie einfach "Keine Office Suite". Sie können im Bedarfsfall jederzeit eine oder mehrere zu Ihrem installierten System hinzufügen.</translation>
     </message>
     <message>
       <location filename="../src/modules/packagechooserq/packagechooserq-qt6.qml" line="121"/>
@@ -5014,7 +5014,7 @@ Die vertikale Bildlaufleiste ist anpassbar, liegt derzeit bei einer Breite von 1
     <message>
       <location filename="../src/modules/usersq/usersq.qml" line="87"/>
       <source>Login name</source>
-      <translation>Login Name</translation>
+      <translation>Anmeldename</translation>
     </message>
     <message>
       <location filename="../src/modules/usersq/usersq.qml" line="116"/>
@@ -5039,7 +5039,7 @@ Die vertikale Bildlaufleiste ist anpassbar, liegt derzeit bei einer Breite von 1
     <message>
       <location filename="../src/modules/usersq/usersq.qml" line="153"/>
       <source>Computer name</source>
-      <translation>Computer Name</translation>
+      <translation>Computername</translation>
     </message>
     <message>
       <location filename="../src/modules/usersq/usersq.qml" line="180"/>
@@ -5094,12 +5094,12 @@ Die vertikale Bildlaufleiste ist anpassbar, liegt derzeit bei einer Breite von 1
     <message>
       <location filename="../src/modules/usersq/usersq.qml" line="328"/>
       <source>Root password</source>
-      <translation>Root Passwort</translation>
+      <translation>Root-Passwort</translation>
     </message>
     <message>
       <location filename="../src/modules/usersq/usersq.qml" line="346"/>
       <source>Repeat root password</source>
-      <translation>Wiederhole das Root Passwort</translation>
+      <translation>Wiederholen Sie das Root-Passwort</translation>
     </message>
     <message>
       <location filename="../src/modules/usersq/usersq.qml" line="372"/>
@@ -5147,7 +5147,7 @@ Die vertikale Bildlaufleiste ist anpassbar, liegt derzeit bei einer Breite von 1
     <message>
       <location filename="../src/modules/usersq/usersq-qt6.qml" line="86"/>
       <source>Login name</source>
-      <translation>Login Name</translation>
+      <translation>Anmeldename</translation>
     </message>
     <message>
       <location filename="../src/modules/usersq/usersq-qt6.qml" line="115"/>
@@ -5172,7 +5172,7 @@ Die vertikale Bildlaufleiste ist anpassbar, liegt derzeit bei einer Breite von 1
     <message>
       <location filename="../src/modules/usersq/usersq-qt6.qml" line="152"/>
       <source>Computer name</source>
-      <translation>Computer Name</translation>
+      <translation>Computername</translation>
     </message>
     <message>
       <location filename="../src/modules/usersq/usersq-qt6.qml" line="179"/>
@@ -5202,7 +5202,7 @@ Die vertikale Bildlaufleiste ist anpassbar, liegt derzeit bei einer Breite von 1
     <message>
       <location filename="../src/modules/usersq/usersq-qt6.qml" line="237"/>
       <source>Repeat password</source>
-      <translation>Wiederhole das Passwort</translation>
+      <translation>Wiederholen Sie das Passwort</translation>
     </message>
     <message>
       <location filename="../src/modules/usersq/usersq-qt6.qml" line="264"/>
@@ -5217,7 +5217,7 @@ Die vertikale Bildlaufleiste ist anpassbar, liegt derzeit bei einer Breite von 1
     <message>
       <location filename="../src/modules/usersq/usersq-qt6.qml" line="304"/>
       <source>Use the same password for the administrator account.</source>
-      <translation>Nutze das gleiche Passwort auch für das Administratorkonto.</translation>
+      <translation>Gleiches Passwort auch für das Administratorkonto verwenden.</translation>
     </message>
     <message>
       <location filename="../src/modules/usersq/usersq-qt6.qml" line="317"/>
@@ -5227,12 +5227,12 @@ Die vertikale Bildlaufleiste ist anpassbar, liegt derzeit bei einer Breite von 1
     <message>
       <location filename="../src/modules/usersq/usersq-qt6.qml" line="327"/>
       <source>Root password</source>
-      <translation>Root Passwort</translation>
+      <translation>Root-Passwort</translation>
     </message>
     <message>
       <location filename="../src/modules/usersq/usersq-qt6.qml" line="345"/>
       <source>Repeat root password</source>
-      <translation>Wiederhole das Root Passwort</translation>
+      <translation>Wiederholen Sie das Root-Passwort</translation>
     </message>
     <message>
       <location filename="../src/modules/usersq/usersq-qt6.qml" line="371"/>
@@ -5276,7 +5276,7 @@ Die vertikale Bildlaufleiste ist anpassbar, liegt derzeit bei einer Breite von 1
     <message>
       <location filename="../src/modules/welcomeq/welcomeq.qml" line="91"/>
       <source>Release Notes</source>
-      <translation>Release Anmerkungen</translation>
+      <translation>Veröffentlichungshinweise</translation>
     </message>
     <message>
       <location filename="../src/modules/welcomeq/welcomeq.qml" line="103"/>
@@ -5305,7 +5305,7 @@ Die vertikale Bildlaufleiste ist anpassbar, liegt derzeit bei einer Breite von 1
     <message>
       <location filename="../src/modules/welcomeq/welcomeq-qt6.qml" line="91"/>
       <source>Release Notes</source>
-      <translation>Release Anmerkungen</translation>
+      <translation>Veröffentlichungshinweise</translation>
     </message>
     <message>
       <location filename="../src/modules/welcomeq/welcomeq-qt6.qml" line="103"/>

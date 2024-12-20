@@ -619,7 +619,7 @@ findEssentialLVs( const QList< PartitionCoreModule::DeviceInfo* >& infos )
             continue;
         }
 
-        for ( const auto& j : qAsConst( info->jobs() ) )
+        for ( const auto& j : std::as_const( info->jobs() ) )
         {
             FormatPartitionJob* format = dynamic_cast< FormatPartitionJob* >( j.data() );
             if ( format )

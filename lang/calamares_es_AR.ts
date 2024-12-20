@@ -54,12 +54,12 @@
     <message>
       <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="70"/>
       <source>This system was started with an &lt;strong&gt;EFI&lt;/strong&gt; boot environment.&lt;br&gt;&lt;br&gt;To configure startup from an EFI environment, this installer must deploy a boot loader application, like &lt;strong&gt;GRUB&lt;/strong&gt; or &lt;strong&gt;systemd-boot&lt;/strong&gt; on an &lt;strong&gt;EFI System Partition&lt;/strong&gt;. This is automatic, unless you choose manual partitioning, in which case you must choose it or create it on your own.</source>
-      <translation>Éste sistema se inició con un &lt;br&gt;&lt;br&gt;entorno de arranque&lt;strong&gt; EFI&lt;/strong&gt;. Para configurar el inicio desde un entorno EFI, este instalador debe implementar una aplicación de cargador de arranque, como &lt;strong&gt;GRUB&lt;/strong&gt; o &lt;strong&gt;systemd-boot&lt;/strong&gt; en una &lt;strong&gt;partición del sistema EFI&lt;/strong&gt;. Ésto es automático, a menos que elijas la partición manual, en cuyo caso deberás elegirla o crearla usted mismo.</translation>
+      <translation>Éste sistema se inició con un &lt;br&gt;&lt;br&gt;entorno de arranque&lt;strong&gt; EFI&lt;/strong&gt;. Para configurar el inicio desde un entorno EFI, este instalador debe implementar una aplicación de cargador de arranque, como &lt;strong&gt;GRUB&lt;/strong&gt; o &lt;strong&gt;systemd-boot&lt;/strong&gt; en una &lt;strong&gt;partición del sistema EFI&lt;/strong&gt;. Ésto es automático, a menos que elijas la partición manual, en cuyo caso deberás elegirla o crearla vos mismo.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="82"/>
       <source>This system was started with a &lt;strong&gt;BIOS&lt;/strong&gt; boot environment.&lt;br&gt;&lt;br&gt;To configure startup from a BIOS environment, this installer must install a boot loader, like &lt;strong&gt;GRUB&lt;/strong&gt;, either at the beginning of a partition or on the &lt;strong&gt;Master Boot Record&lt;/strong&gt; near the beginning of the partition table (preferred). This is automatic, unless you choose manual partitioning, in which case you must set it up on your own.</source>
-      <translation>Éste sistema se inició con un entorno de arranque&lt;br&gt;&lt;br&gt; &lt;strong&gt;BIOS&lt;/strong&gt;. Para configurar el inicio desde un entorno BIOS, este instalador debe instalar un cargador de arranque, como &lt;strong&gt;GRUB&lt;/strong&gt;, ya sea al incio de una partición &lt;strong&gt;MASTER BOOT RECORD &lt;/strong&gt; cerca del comienzo de la tabla de particiones ( privilegiado). Esto es automático, a menos que elijas la partición manual, en cuyo caso deberá configurarla usted mismo.</translation>
+      <translation>Éste sistema se inició con un entorno de arranque&lt;br&gt;&lt;br&gt; &lt;strong&gt;BIOS&lt;/strong&gt;. Para configurar el inicio desde un entorno BIOS, este instalador debe instalar un cargador de arranque, como &lt;strong&gt;GRUB&lt;/strong&gt;, ya sea al incio de una partición &lt;strong&gt;MASTER BOOT RECORD &lt;/strong&gt; cerca del comienzo de la tabla de particiones ( privilegiado). Esto es automático, a menos que elijas la partición manual, en cuyo caso deberás configurarla vos mismo.</translation>
     </message>
   </context>
   <context>
@@ -493,13 +493,13 @@ Enlace copiado al portapapeles</translation>
       <location filename="../src/libcalamaresui/ViewManager.cpp" line="339"/>
       <source>The %1 setup program is about to make changes to your disk in order to set up %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
       <comment>%1 is short product name, %2 is short product name with version</comment>
-      <translation>El programa de instalación de %1 está a punto de realizar cambios en su disco para configurar %2.&lt;br/&gt; &lt;strong&gt;Usted no podrá deshacer estos cambios&lt;/strong&gt;.</translation>
+      <translation>El programa de instalación de %1 está a punto de realizar cambios en su disco para configurar %2.&lt;br/&gt; &lt;strong&gt;Vos no podrás deshacer estos cambios&lt;/strong&gt;.</translation>
     </message>
     <message>
       <location filename="../src/libcalamaresui/ViewManager.cpp" line="343"/>
       <source>The %1 installer is about to make changes to your disk in order to install %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
       <comment>%1 is short product name, %2 is short product name with version</comment>
-      <translation>El %1 instalador está a punto de realizar cambios en su disco para instalar %2. No podrá deshacer estos cambios.</translation>
+      <translation>El %1 instalador está a punto de realizar cambios en su disco o unidad para instalar %2. No podrás deshacer estos cambios.</translation>
     </message>
     <message>
       <location filename="../src/libcalamaresui/ViewManager.cpp" line="348"/>
@@ -595,14 +595,14 @@ Enlace copiado al portapapeles</translation>
       <location filename="../src/libcalamaresui/ViewManager.cpp" line="525"/>
       <source>Do you really want to cancel the current setup process?
 The setup program will quit and all changes will be lost.</source>
-      <translation>¿Realmente quiere cancelar el proceso de configuración actual?
+      <translation>¿Realmente querés cancelar el proceso de configuración actual?
 El programa de instalación se cerrará y se perderán todos los cambios.</translation>
     </message>
     <message>
       <location filename="../src/libcalamaresui/ViewManager.cpp" line="527"/>
       <source>Do you really want to cancel the current install process?
 The installer will quit and all changes will be lost.</source>
-      <translation>¿Realmente quiere cancelar el proceso de instalación actual?
+      <translation>¿Realmente querés cancelar el proceso de instalación actual?
 El instalador se cerrará y se perderán todos los cambios.</translation>
     </message>
   </context>

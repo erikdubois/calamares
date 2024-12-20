@@ -1048,7 +1048,7 @@ A telepítő ki fog lépni és minden változtatás elvész.</translation>
     <message>
       <location filename="../src/modules/packagechooser/Config.cpp" line="247"/>
       <source>Install option: &lt;strong&gt;%1&lt;/strong&gt;</source>
-      <translation>Telepítési opció: &lt;strong&gt;%1&lt;/strong&gt;</translation>
+      <translation>Telepítési lehetőség: &lt;strong&gt;%1&lt;/strong&gt;</translation>
     </message>
     <message>
       <location filename="../src/modules/packagechooser/Config.cpp" line="247"/>
@@ -1064,12 +1064,12 @@ A telepítő ki fog lépni és minden változtatás elvész.</translation>
     <message>
       <location filename="../src/modules/summary/Config.cpp" line="39"/>
       <source>This is an overview of what will happen once you start the setup procedure.</source>
-      <translation>Összefoglaló arról , hogy mi fog történni a telepítés közben.</translation>
+      <translation>Összefoglaló arról, hogy mi fog történni a telepítés közben.</translation>
     </message>
     <message>
       <location filename="../src/modules/summary/Config.cpp" line="44"/>
       <source>This is an overview of what will happen once you start the install procedure.</source>
-      <translation>Összefoglaló arról , hogy mi fog történni a telepítés közben.</translation>
+      <translation>Összefoglaló arról, hogy mi fog történni a telepítés közben.</translation>
     </message>
     <message>
       <location filename="../src/modules/users/Config.cpp" line="236"/>
@@ -1079,7 +1079,7 @@ A telepítő ki fog lépni és minden változtatás elvész.</translation>
     <message>
       <location filename="../src/modules/users/Config.cpp" line="242"/>
       <source>Your username must start with a lowercase letter or underscore.</source>
-      <translation>Felhasználónévnek kisbetűvel vagy aláhúzásjellel kell kezdődnie.</translation>
+      <translation>A felhasználónévnek kisbetűvel vagy aláhúzásjellel kell kezdődnie.</translation>
     </message>
     <message>
       <location filename="../src/modules/users/Config.cpp" line="246"/>
@@ -1173,7 +1173,7 @@ A telepítő ki fog lépni és minden változtatás elvész.</translation>
       <location filename="../src/modules/contextualprocess/ContextualProcessJob.cpp" line="115"/>
       <source>Performing contextual processes' job…</source>
       <comment>@status</comment>
-      <translation>A kontextuális folyamatok feladatának végrehajtása…</translation>
+      <translation>A környezetfüggő folyamatok feladatának végrehajtása…</translation>
     </message>
   </context>
   <context>
@@ -1525,7 +1525,7 @@ A telepítő ki fog lépni és minden változtatás elvész.</translation>
       <location filename="../src/modules/partition/core/DeviceModel.cpp" line="82"/>
       <source>%1 - %2 (%3)</source>
       <extracomment>device[name] - size[number] (device-node[name])</extracomment>
-      <translation>%1 - %2 (%3)</translation>
+      <translation>%1 – %2 (%3)</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/core/DeviceModel.cpp" line="93"/>
@@ -2306,7 +2306,7 @@ A telepítő ki fog lépni és minden változtatás elvész.</translation>
     <message>
       <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="33"/>
       <source>Configuring LUKS key file.</source>
-      <translation>LUKS kulcs fájl konfigurálása.</translation>
+      <translation>LUKS kulcsfájl beállítása.</translation>
     </message>
     <message>
       <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="254"/>
@@ -2425,12 +2425,12 @@ A telepítő ki fog lépni és minden változtatás elvész.</translation>
     <message>
       <location filename="../src/modules/netinstall/NetInstallViewStep.cpp" line="53"/>
       <source>Browser software</source>
-      <translation>Böngésző szoftver</translation>
+      <translation>Böngészőszoftver</translation>
     </message>
     <message>
       <location filename="../src/modules/netinstall/NetInstallViewStep.cpp" line="54"/>
       <source>Browser package</source>
-      <translation>Böngésző csomag</translation>
+      <translation>Böngészőcsomag</translation>
     </message>
     <message>
       <location filename="../src/modules/netinstall/NetInstallViewStep.cpp" line="55"/>

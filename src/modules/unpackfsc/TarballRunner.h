@@ -17,6 +17,7 @@
  */
 class TarballRunner : public Runner
 {
+    Q_OBJECT
 public:
     using Runner::Runner;
 

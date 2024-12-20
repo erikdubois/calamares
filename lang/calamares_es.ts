@@ -26,13 +26,13 @@
       <location filename="../src/modules/users/ActiveDirectoryJob.cpp" line="39"/>
       <source>Enroll system in Active Directory</source>
       <comment>@label</comment>
-      <translation>Inscribir sistema en Directorio Activo</translation>
+      <translation>Dar de alta el equipo en Active Directory</translation>
     </message>
     <message>
       <location filename="../src/modules/users/ActiveDirectoryJob.cpp" line="45"/>
       <source>Enrolling system in Active Directory…</source>
       <comment>@status</comment>
-      <translation>Inscribiendo sistema en Directorio Activo…</translation>
+      <translation>Dando de alta al equipo en Active Directory...</translation>
     </message>
   </context>
   <context>
@@ -138,7 +138,7 @@
     <message>
       <location filename="../src/calamares/DebugWindow.ui" line="102"/>
       <source>Crashes Calamares, so that Dr. Konqi can look at it.</source>
-      <translation>Accidentes Calamares, para que el Dr. Konqi pueda verlo.</translation>
+      <translation>Cuelga Calamares, para verlo con Dr. Konqi.</translation>
     </message>
     <message>
       <location filename="../src/calamares/DebugWindow.ui" line="115"/>
@@ -189,7 +189,7 @@
       <location filename="../src/libcalamaresui/viewpages/ExecutionViewStep.cpp" line="117"/>
       <source>Set Up</source>
       <comment>@label</comment>
-      <translation>Configuracion</translation>
+      <translation>Configuración</translation>
     </message>
     <message>
       <location filename="../src/libcalamaresui/viewpages/ExecutionViewStep.cpp" line="117"/>
@@ -233,13 +233,13 @@
       <location filename="../src/libcalamares/ProcessJob.cpp" line="49"/>
       <source>Running command %1 in target system…</source>
       <comment>@status</comment>
-      <translation>Ejecutando el comando %1 en el sistema a instalar…</translation>
+      <translation>Ejecutando el la orden %1 en el sistema a instalar…</translation>
     </message>
     <message>
       <location filename="../src/libcalamares/ProcessJob.cpp" line="53"/>
       <source>Running command %1…</source>
       <comment>@status</comment>
-      <translation>Ejecutando el comando %1…</translation>
+      <translation>Ejecutando la orden %1…</translation>
     </message>
   </context>
   <context>
@@ -247,7 +247,7 @@
     <message>
       <location filename="../src/libcalamares/python/PythonJob.cpp" line="219"/>
       <source>Running %1 operation.</source>
-      <translation>Ejecutando operación %1.</translation>
+      <translation>Ejecutando la operación %1.</translation>
     </message>
     <message>
       <location filename="../src/libcalamares/python/PythonJob.cpp" line="234"/>
@@ -277,7 +277,7 @@
     <message>
       <location filename="../src/libcalamares/python/PythonJob.cpp" line="305"/>
       <source>Bad internal script</source>
-      <translation>Script interno malo</translation>
+      <translation>Hubo un problema en el script interno</translation>
     </message>
     <message>
       <location filename="../src/libcalamares/python/PythonJob.cpp" line="306"/>
@@ -287,7 +287,7 @@
     <message>
       <location filename="../src/libcalamares/python/PythonJob.cpp" line="320"/>
       <source>Main script file %1 for python job %2 could not be loaded because it raised an  exception.</source>
-      <translation>El archivo de Script principal %1 para el trabajo de Python %2 no se pudo cargar porque generó una excepción.</translation>
+      <translation>El archivo de script principal %1 para el trabajo de Python %2 no se pudo cargar porque generó una excepción.</translation>
     </message>
     <message>
       <location filename="../src/libcalamares/python/PythonJob.cpp" line="346"/>
@@ -547,7 +547,7 @@ El enlace se ha copiado en el portapapeles.</translation>
       <location filename="../src/libcalamaresui/ViewManager.cpp" line="407"/>
       <source>Cancel the setup process without changing the system.</source>
       <comment>@tooltip</comment>
-      <translation>Cancele el proceso de configuración sin cambiar el sistema.</translation>
+      <translation>Cancela el proceso de configuración sin cambiar el sistema.</translation>
     </message>
     <message>
       <location filename="../src/libcalamaresui/ViewManager.cpp" line="408"/>
@@ -757,7 +757,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1762"/>
       <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1784"/>
       <source>&lt;strong&gt;Erase disk&lt;/strong&gt;&lt;br/&gt;This will &lt;font color="red"&gt;delete&lt;/font&gt; all data currently present on the selected storage device.</source>
-      <translation>&lt;strong&gt;Borrar el disco&lt;/strong&gt;&lt;br/&gt;Esto &lt;font color="red"&gt;eliminará permanentemente&lt;/font&gt; todos los datos en el dispositivo de almacenamiento.</translation>
+      <translation>&lt;strong&gt;Borrar el disco&lt;/strong&gt;&lt;br/&gt;Al hacerlo &lt;font color="red"&gt;se eliminarán permanentemente&lt;/font&gt; todos los datos en el dispositivo de almacenamiento.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1719"/>
@@ -765,7 +765,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1758"/>
       <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1780"/>
       <source>&lt;strong&gt;Install alongside&lt;/strong&gt;&lt;br/&gt;The installer will shrink a partition to make room for %1.</source>
-      <translation>&lt;strong&gt;Instalar al lado&lt;/strong&gt;&lt;br/&gt;El instalador reducirá el tamaño de una partición y dejará el suficiente para instalar %1.</translation>
+      <translation>&lt;strong&gt;Instalación paralela&lt;/strong&gt;&lt;br/&gt;El instalador reducirá el tamaño de una partición existente y dejará el suficiente para instalar %1. Ambos sistemas operativos convivirán en el mismo disco.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1723"/>
@@ -840,13 +840,13 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
     <message>
       <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1599"/>
       <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself.</source>
-      <translation>&lt;strong&gt;Particionado manual&lt;/strong&gt;&lt;br/&gt; Puedes crear o cambiar el tamaño de las particiones a tu gusto.</translation>
+      <translation>&lt;strong&gt;Particionado manual&lt;/strong&gt;&lt;br/&gt;Puedes crear o cambiar el tamaño de las particiones a tu gusto.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1627"/>
       <source>Bootloader location:</source>
       <comment>@label</comment>
-      <translation>Ubicación del cargador de arranque:</translation>
+      <translation>Ubicación del gestor de arranque:</translation>
     </message>
   </context>
   <context>
@@ -880,18 +880,18 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="366"/>
       <source>Clear mounts for partitioning operations on %1</source>
       <comment>@title</comment>
-      <translation>Borrar los puntos de montaje para las operaciones de particionado en «%1»</translation>
+      <translation>Desmontar las particiones para llevar a cabo las acciones en «%1»</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="372"/>
       <source>Clearing mounts for partitioning operations on %1…</source>
       <comment>@status</comment>
-      <translation>Borrando puntos de montaje para operaciones de particionamiento en %1...</translation>
+      <translation>Desmontando las particiones para llevar a cabo las acciones en %1...</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="391"/>
       <source>Cleared all mounts for %1</source>
-      <translation>Borrar todos los puntos de montaje de «%1»</translation>
+      <translation>Se han desmontando todas las particiones de «%1»</translation>
     </message>
   </context>
   <context>
@@ -901,12 +901,12 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="40"/>
       <source>Clearing all temporary mounts…</source>
       <comment>@status</comment>
-      <translation>Borrando todos los puntos de montaje temporales...</translation>
+      <translation>Desmontando todos los puntos de montaje temporales...</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="70"/>
       <source>Cleared all temporary mounts.</source>
-      <translation>Limpiado todos los puntos de montaje temporales.</translation>
+      <translation>Se han desmontado todos los puntos de montaje temporales.</translation>
     </message>
   </context>
   <context>
@@ -976,25 +976,25 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/keyboard/Config.cpp" line="504"/>
       <source>Keyboard model has been set to %1.</source>
       <comment>@label, %1 is keyboard model, as in Apple Magic Keyboard</comment>
-      <translation>El modelo de teclado se ha establecido en %1.</translation>
+      <translation>Se utilizará el tipo de teclado «%1».</translation>
     </message>
     <message>
       <location filename="../src/modules/keyboard/Config.cpp" line="512"/>
       <source>Keyboard layout has been set to %1/%2.</source>
       <comment>@label, %1 is layout, %2 is layout variant</comment>
-      <translation>La distribución del teclado se ha establecido en %1/%2.</translation>
+      <translation>Se utilizará la distribución del teclado «%1/%2».</translation>
     </message>
     <message>
       <location filename="../src/modules/locale/Config.cpp" line="381"/>
       <source>Set timezone to %1.</source>
       <comment>@action</comment>
-      <translation>Establezca la zona horaria en %1.</translation>
+      <translation>Se utilizará el huso horario de «%1».</translation>
     </message>
     <message>
       <location filename="../src/modules/locale/Config.cpp" line="418"/>
       <source>The system language will be set to %1.</source>
       <comment>@info</comment>
-      <translation>El idioma del sistema se establecerá a %1.</translation>
+      <translation>Se utilizará «%1» como idioma del sistema.</translation>
     </message>
     <message>
       <location filename="../src/modules/locale/Config.cpp" line="425"/>
@@ -1030,12 +1030,12 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
     <message>
       <location filename="../src/modules/netinstall/Config.cpp" line="76"/>
       <source>Package selection</source>
-      <translation>Selección de paquetes</translation>
+      <translation>Elegir paquetes</translation>
     </message>
     <message>
       <location filename="../src/modules/packagechooser/Config.cpp" line="110"/>
       <source>Package Selection</source>
-      <translation>Selección de paquetes</translation>
+      <translation>Elegir paquetes</translation>
     </message>
     <message>
       <location filename="../src/modules/packagechooser/Config.cpp" line="112"/>
@@ -1146,7 +1146,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
     <message>
       <location filename="../src/modules/welcome/Config.cpp" line="80"/>
       <source>This program will ask you some questions and set up %2 on your computer.</source>
-      <translation>El programa te hará algunas preguntas y configurará %2 en tu equipo.</translation>
+      <translation>El asistente te hará algunas preguntas y configurará %2 en tu equipo.</translation>
     </message>
     <message>
       <location filename="../src/modules/welcome/Config.cpp" line="264"/>
@@ -1283,44 +1283,44 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="181"/>
       <source>Create new %1MiB partition on %3 (%2) with entries %4</source>
       <comment>@title</comment>
-      <translation>Crear nueva partición %1MiB  en %3 (%2) con entradas %4</translation>
+      <translation>Crear una nueva partición de %1MiB en %3 (%2) de tipo %4</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="189"/>
       <source>Create new %1MiB partition on %3 (%2)</source>
       <comment>@title</comment>
-      <translation>Crear nueva partición %1MiB en %3 (%2).</translation>
+      <translation>Crear una nueva partición de %1MiB en %3 (%2).</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="196"/>
       <source>Create new %2MiB partition on %4 (%3) with file system %1</source>
       <comment>@title</comment>
-      <translation>Crear nueva partición %2MiB en %4 (%3) con sistema de archivos %1.</translation>
+      <translation>Crear nueva partición de %2MiB en %4 (%3) con el sistema de archivos %1.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="212"/>
       <source>Create new &lt;strong&gt;%1MiB&lt;/strong&gt; partition on &lt;strong&gt;%3&lt;/strong&gt; (%2) with entries &lt;em&gt;%4&lt;/em&gt;</source>
       <comment>@info</comment>
-      <translation>Crear nueva partición &lt;strong&gt;%1MiB&lt;/strong&gt;  en &lt;strong&gt;%3&lt;/strong&gt; (%2) con entradas&lt;em&gt;%4&lt;/em&gt;.</translation>
+      <translation>Crear nueva partición de &lt;strong&gt;%1MiB&lt;/strong&gt; en &lt;strong&gt;%3&lt;/strong&gt; (%2) de tipo &lt;em&gt;%4&lt;/em&gt;.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="222"/>
       <source>Create new &lt;strong&gt;%1MiB&lt;/strong&gt; partition on &lt;strong&gt;%3&lt;/strong&gt; (%2)</source>
       <comment>@info</comment>
-      <translation>Crear nueva partición &lt;strong&gt;%1MiB&lt;/strong&gt; en &lt;strong&gt;%3&lt;/strong&gt; (%2).</translation>
+      <translation>Crear nueva partición de &lt;strong&gt;%1MiB&lt;/strong&gt; en &lt;strong&gt;%3&lt;/strong&gt; (%2).</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="229"/>
       <source>Create new &lt;strong&gt;%2MiB&lt;/strong&gt; partition on &lt;strong&gt;%4&lt;/strong&gt; (%3) with file system &lt;strong&gt;%1&lt;/strong&gt;</source>
       <comment>@info</comment>
-      <translation>Crear nueva partición &lt;strong&gt;%2MiB&lt;/strong&gt;  en &lt;strong&gt;%4&lt;/strong&gt; (%3) con sistema de archivos &lt;strong&gt;%1&lt;/strong&gt;.</translation>
+      <translation>Crear nueva partición de &lt;strong&gt;%2MiB&lt;/strong&gt; en &lt;strong&gt;%4&lt;/strong&gt; (%3) con el sistema de archivos &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="254"/>
       <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="257"/>
       <source>Creating new %1 partition on %2…</source>
       <comment>@status</comment>
-      <translation> Creando nueva partición %1 en %2...</translation>
+      <translation>Creando una nueva partición %1 en %2...</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="274"/>
@@ -1364,13 +1364,13 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="58"/>
       <source>Creating new %1 partition table on %2…</source>
       <comment>@status</comment>
-      <translation> Creando nueva tabla de particiones %1 en %2...</translation>
+      <translation> Creando una nueva tabla de particiones %1 en %2...</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="49"/>
       <source>Creating new &lt;strong&gt;%1&lt;/strong&gt; partition table on &lt;strong&gt;%2&lt;/strong&gt; (%3)…</source>
       <comment>@status</comment>
-      <translation>Creando nueva tabla de particiones &lt;strong&gt;%1&lt;/strong&gt; en &lt;strong&gt;%2&lt;/strong&gt; (%3)...</translation>
+      <translation>Creando una nueva tabla de particiones &lt;strong&gt;%1&lt;/strong&gt; en &lt;strong&gt;%2&lt;/strong&gt; (%3)...</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="86"/>
@@ -1395,7 +1395,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/users/CreateUserJob.cpp" line="137"/>
       <source>Creating user %1…</source>
       <comment>@status</comment>
-      <translation>Creando usuario %1...</translation>
+      <translation>Creando el usuario %1...</translation>
     </message>
     <message>
       <location filename="../src/modules/users/CreateUserJob.cpp" line="120"/>
@@ -1438,7 +1438,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/partition/jobs/CreateVolumeGroupJob.cpp" line="38"/>
       <source>Creating new volume group named &lt;strong&gt;%1&lt;/strong&gt;…</source>
       <comment>@status</comment>
-      <translation>Creando nuevo grupo de volúmenes llamado&lt;strong&gt;%1&lt;/strong&gt;...</translation>
+      <translation>Creando un nuevo grupo de volúmenes llamado &lt;strong&gt;%1&lt;/strong&gt;...</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/CreateVolumeGroupJob.cpp" line="51"/>
@@ -1503,12 +1503,12 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
     <message>
       <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="95"/>
       <source>This is a &lt;strong&gt;loop&lt;/strong&gt; device.&lt;br&gt;&lt;br&gt;It is a pseudo-device with no partition table that makes a file accessible as a block device. This kind of setup usually only contains a single filesystem.</source>
-      <translation>Este es un dispositivo &lt;strong&gt;«loop»&lt;/strong&gt;.&lt;br/&gt;&lt;br/&gt;Lo que significa que es un archivo normal que se ha montado como disco virtual de bloques, pero sin tabla de particiones. Normalmente estos puntos de montaje contienen un único sistema de archivos, como una sola partición.</translation>
+      <translation>Este es un dispositivo &lt;strong&gt;«loop»&lt;/strong&gt;, o de bucle.&lt;br/&gt;&lt;br/&gt;Lo que significa que es un archivo normal que se ha montado como disco virtual de bloques, pero sin tabla de particiones. Normalmente estos puntos de montaje contienen un único sistema de archivos, como una sola partición.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="104"/>
       <source>This installer &lt;strong&gt;cannot detect a partition table&lt;/strong&gt; on the selected storage device.&lt;br&gt;&lt;br&gt;The device either has no partition table, or the partition table is corrupted or of an unknown type.&lt;br&gt;This installer can create a new partition table for you, either automatically, or through the manual partitioning page.</source>
-      <translation>Este instalador &lt;strong&gt;no puede detectar una tabla de particiones&lt;/strong&gt; en el dispositivo de almacenamiento seleccionado.&lt;br&gt;&lt;br&gt; El dispositivo no tiene una tabla de particiones o la tabla de particiones está corrupta o es de un tipo desconocido.&lt;br&gt; Este instalador puede crearte una nueva tabla de particiones automáticamente o mediante la página de particionamiento manual.</translation>
+      <translation>Este instalador &lt;strong&gt;no puede detectar una tabla de particiones&lt;/strong&gt; en el dispositivo de almacenamiento seleccionado.&lt;br&gt;&lt;br&gt;O bien no contiene una tabla de particiones, o la tabla está mal, o es de un tipo desconocido.&lt;br&gt; Este instalador puede crearte una nueva tabla automáticamente y también hay una página de particionamiento manual.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="139"/>
@@ -1700,49 +1700,49 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="208"/>
       <source>Install %1 on &lt;strong&gt;new&lt;/strong&gt; %2 system partition with features &lt;em&gt;%3&lt;/em&gt;</source>
       <comment>@info</comment>
-      <translation>Instalar %1 en una &lt;strong&gt;nueva&lt;/strong&gt; partición %2 del sistema con funciones &lt;em&gt;%3&lt;/em&gt;</translation>
+      <translation>Instalar %1 en una &lt;strong&gt;nueva&lt;/strong&gt; partición %2 del sistema con las funciones &lt;em&gt;%3&lt;/em&gt;</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="217"/>
       <source>Install %1 on &lt;strong&gt;new&lt;/strong&gt; %2 system partition</source>
       <comment>@info</comment>
-      <translation>Instalar %1 en la &lt;strong&gt;nueva&lt;/strong&gt; partición del sistema %2</translation>
+      <translation>Instalar %1 en una &lt;strong&gt;nueva&lt;/strong&gt; partición %2 del sistema</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="226"/>
       <source>Set up &lt;strong&gt;new&lt;/strong&gt; %2 partition with mount point &lt;strong&gt;%1&lt;/strong&gt; and features &lt;em&gt;%3&lt;/em&gt;</source>
       <comment>@info</comment>
-      <translation>Configure una &lt;strong&gt;nueva&lt;/strong&gt; partición %2 con el punto de montaje &lt;strong&gt;%1&lt;/strong&gt; y las características &lt;em&gt;%3&lt;/em&gt;.</translation>
+      <translation>Configurar una &lt;strong&gt;nueva&lt;/strong&gt; partición %2 con el punto de montaje &lt;strong&gt;%1&lt;/strong&gt; y las funciones &lt;em&gt;%3&lt;/em&gt;.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="235"/>
       <source>Set up &lt;strong&gt;new&lt;/strong&gt; %2 partition with mount point &lt;strong&gt;%1&lt;/strong&gt;%3</source>
       <comment>@info</comment>
-      <translation>Configurar una &lt;strong&gt;nueva&lt;/strong&gt; %2 con el punto de montaje&lt;strong&gt; %1&lt;/strong&gt;%3.</translation>
+      <translation>Configurar una &lt;strong&gt;nueva&lt;/strong&gt; partición %2 con el punto de montaje &lt;strong&gt;%1&lt;/strong&gt;%3.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="250"/>
       <source>Install %2 on %3 system partition &lt;strong&gt;%1&lt;/strong&gt; with features &lt;em&gt;%4&lt;/em&gt;</source>
       <comment>@info</comment>
-      <translation>Instalar %2 en %3 la partición del sistema &lt;strong&gt;%1&lt;/strong&gt; con las características&lt;em&gt; %4&lt;/em&gt;.</translation>
+      <translation>Instalar %2 en la partición %3 del sistema &lt;strong&gt;%1&lt;/strong&gt; con las funciones &lt;em&gt;%4&lt;/em&gt;.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="260"/>
       <source>Install %2 on %3 system partition &lt;strong&gt;%1&lt;/strong&gt;</source>
       <comment>@info</comment>
-      <translation>Instalar %2 en %3 partición del sistema &lt;strong&gt;%1&lt;/strong&gt;.</translation>
+      <translation>Instalar %2 en la partición %3 del sistema &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="270"/>
       <source>Set up %3 partition &lt;strong&gt;%1&lt;/strong&gt; with mount point &lt;strong&gt;%2&lt;/strong&gt; and features &lt;em&gt;%4&lt;/em&gt;</source>
       <comment>@info</comment>
-      <translation>Configurar %3 la partición &lt;strong&gt;%1&lt;/strong&gt; con el punto de montaje&lt;strong&gt; %2&lt;/strong&gt; y las funciones &lt;em&gt;%4&lt;/em&gt;.</translation>
+      <translation>Configurar la partición %3 en &lt;strong&gt;%1&lt;/strong&gt; con el punto de montaje&lt;strong&gt; %2&lt;/strong&gt; y las funciones &lt;em&gt;%4&lt;/em&gt;.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="280"/>
       <source>Set up %3 partition &lt;strong&gt;%1&lt;/strong&gt; with mount point &lt;strong&gt;%2&lt;/strong&gt;%4…</source>
       <comment>@info</comment>
-      <translation>Configurar %3 partición &lt;strong&gt;%1 &lt;/strong&gt;con punto de montaje &lt;strong&gt;%2&lt;/strong&gt;%4.</translation>
+      <translation>Configurar la partición %3 en &lt;strong&gt;%1&lt;/strong&gt; con el punto de montaje &lt;strong&gt;%2&lt;/strong&gt;%4.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="296"/>
@@ -1754,7 +1754,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="305"/>
       <source>Setting up mount points…</source>
       <comment>@status</comment>
-      <translation>Configurando puntos de montaje...</translation>
+      <translation>Creando puntos de montaje...</translation>
     </message>
   </context>
   <context>
@@ -1866,7 +1866,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
     <message>
       <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="165"/>
       <source>There is not enough drive space. At least %1 GiB is required.</source>
-      <translation>No hay suficiente espació en el disco duro. Se requiere al menos %1 GB libre.</translation>
+      <translation>No hay suficiente espacio en el disco duro, se necesita un mínimo de %1 GB libres.</translation>
     </message>
     <message>
       <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="173"/>
@@ -1881,12 +1881,12 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
     <message>
       <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="184"/>
       <source>is plugged in to a power source</source>
-      <translation>esta conectado a una fuente de alimentación</translation>
+      <translation>está cargándose y no depende del estado de la batería</translation>
     </message>
     <message>
       <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="185"/>
       <source>The system is not plugged in to a power source.</source>
-      <translation>El sistema no esta conectado a una fuente de alimentación.</translation>
+      <translation>El equipo parece estar funcionando solo con batería, sin un cargador conectado.</translation>
     </message>
     <message>
       <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="192"/>
@@ -1896,17 +1896,17 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
     <message>
       <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="193"/>
       <source>The system is not connected to the Internet.</source>
-      <translation>El sistema no esta conectado a Internet</translation>
+      <translation>El equipo no parece tener conexión a Internet</translation>
     </message>
     <message>
       <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="200"/>
       <source>is running the installer as an administrator (root)</source>
-      <translation>esta ejecutándose con permisos de administrador («root»).</translation>
+      <translation>está ejecutándose con permisos de administrador («root»).</translation>
     </message>
     <message>
       <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="204"/>
       <source>The setup program is not running with administrator rights.</source>
-      <translation>El instalador no esta ejecutándose con permisos de administrador.</translation>
+      <translation>El instalador está ejecutándose sin permisos de administrador («root»).</translation>
     </message>
     <message>
       <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="205"/>
@@ -2021,7 +2021,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/initcpio/InitcpioJob.cpp" line="31"/>
       <source>Creating initramfs with mkinitcpio…</source>
       <comment>@status</comment>
-      <translation>Creando initramfs con mkinitcpio…</translation>
+      <translation>Creando el «initramfs» (archivos de arranque) con «mkinitcpio»…</translation>
     </message>
   </context>
   <context>
@@ -2030,7 +2030,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/initramfs/InitramfsJob.cpp" line="27"/>
       <source>Creating initramfs…</source>
       <comment>@status</comment>
-      <translation>Creando initramfs...</translation>
+      <translation>Creando el «initramfs» (archivos de arranque)...</translation>
     </message>
   </context>
   <context>
@@ -2093,7 +2093,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="30"/>
       <source>The system locale setting affects the language and character set for some command line user interface elements.&lt;br/&gt;The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
       <comment>@info</comment>
-      <translation>La configuración regional del sistema afecta al idioma y al tipo de caracteres que se muestran en algunos elementos del terminal.&lt;br/&gt;El modo actual está establecido a «&lt;strong&gt;%1&lt;/strong&gt;».</translation>
+      <translation>La configuración regional del sistema afecta al idioma y al formato numérico y de fechas del terminal.&lt;br/&gt;El modo actual está establecido a «&lt;strong&gt;%1&lt;/strong&gt;».</translation>
     </message>
     <message>
       <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="55"/>
@@ -2160,7 +2160,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/license/LicensePage.cpp" line="154"/>
       <source>If you do not agree with the terms, the setup procedure cannot continue.</source>
       <comment>@info</comment>
-      <translation>Si no estás de acuerdo con estas licencias la configuración no puede continuar.</translation>
+      <translation>Si no estás de acuerdo con estas cláusulas legales el asistente no puede continuar.</translation>
     </message>
     <message>
       <location filename="../src/modules/license/LicensePage.cpp" line="159"/>
@@ -2172,7 +2172,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/license/LicensePage.cpp" line="165"/>
       <source>If you do not agree with the terms, proprietary software will not be installed, and open source alternatives will be used instead.</source>
       <comment>@info</comment>
-      <translation>Si no estás de acuerdo con estas licencias no se instalará dicho software y se sustituirá por alternativas libres, de código abierto.</translation>
+      <translation>Si no estás de acuerdo con estas cláusulas legales los programas se sustituirán por alternativas libres y de código abierto.</translation>
     </message>
   </context>
   <context>
@@ -2383,9 +2383,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
             and timezone settings for you. You can fine-tune the suggested settings below. Search the map by dragging
             to move and using the +/- buttons to zoom in/out or use mouse scrolling for zooming.</source>
       <comment>@info</comment>
-      <translation>Seleccione su ubicación preferida en el mapa para que el instalador pueda sugerir la ubicación
-            y la configuración de la zona horaria para usted. Puede ajustar la configuración sugerida a continuación. Busque en el mapa arrastrando
-            para mover y usar los botones +/- para acercar/alejar o usar el desplazamiento del mouse para acercar.</translation>
+      <translation>Marca una posición en el mapa para que el asistente te ayude a elegir un huso horario y una configuración regional. No te preocupes, ya que se puede personalizar más abajo. Arrastra el cursor para moverte por el mapa y amplia o reduce el tamaño con los botones +/- y la rueda del ratón.</translation>
     </message>
   </context>
   <context>
@@ -2402,9 +2400,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
             and timezone settings for you. You can fine-tune the suggested settings below. Search the map by dragging
             to move and using the +/- buttons to zoom in/out or use mouse scrolling for zooming.</source>
       <comment>@label</comment>
-      <translation>Seleccione su ubicación preferida en el mapa para que el instalador pueda sugerir la ubicación
-            y la configuración de la zona horaria para usted. Puede ajustar la configuración sugerida a continuación. Busque en el mapa arrastrando
-            para mover y usar los botones +/- para acercar/alejar o usar el desplazamiento del mouse para acercar.</translation>
+      <translation>Marca una posición en el mapa para que el asistente te ayude a elegir un huso horario y una configuración regional. No te preocupes, ya que se puede personalizar más abajo. Arrastra el cursor para moverte por el mapa y  amplia o reduce el tamaño con los botones +/- y la rueda del ratón.</translation>
     </message>
   </context>
   <context>
@@ -2412,7 +2408,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
     <message>
       <location filename="../src/modules/netinstall/NetInstallViewStep.cpp" line="50"/>
       <source>Package selection</source>
-      <translation>Selección de paquetes</translation>
+      <translation>Elegir paquetes</translation>
     </message>
     <message>
       <location filename="../src/modules/netinstall/NetInstallViewStep.cpp" line="51"/>
@@ -2562,7 +2558,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/localeq/Offline.qml" line="47"/>
       <source>Select your preferred region, or use the default settings</source>
       <comment>@label</comment>
-      <translation>Seleccione su región preferida o use la configuración por defecto</translation>
+      <translation>Elige una región o deja que el asistente lo haga de forma automática</translation>
     </message>
     <message>
       <location filename="../src/modules/localeq/Offline.qml" line="103"/>
@@ -2576,7 +2572,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/localeq/Offline.qml" line="120"/>
       <source>Select your preferred zone within your region</source>
       <comment>@label</comment>
-      <translation>Selecciona tu zona preferida dentro de tu región</translation>
+      <translation>Selecciona una zona dentro de tu región</translation>
     </message>
     <message>
       <location filename="../src/modules/localeq/Offline.qml" line="193"/>
@@ -2588,7 +2584,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/localeq/Offline.qml" line="240"/>
       <source>You can fine-tune language and locale settings below</source>
       <comment>@label</comment>
-      <translation>A continuación puede ajustar la configuración Regional y de Idioma</translation>
+      <translation>A continuación puedes ajustar la configuración regional.</translation>
     </message>
   </context>
   <context>
@@ -2597,7 +2593,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/localeq/Offline-qt6.qml" line="47"/>
       <source>Select your preferred region, or use the default settings</source>
       <comment>@label</comment>
-      <translation>Seleccione su región preferida o use la configuración por defecto</translation>
+      <translation>Elige una región o deja que el asistente lo haga de forma automática</translation>
     </message>
     <message>
       <location filename="../src/modules/localeq/Offline-qt6.qml" line="103"/>
@@ -2611,7 +2607,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/localeq/Offline-qt6.qml" line="120"/>
       <source>Select your preferred zone within your region</source>
       <comment>@label</comment>
-      <translation>Selecciona tu zona preferida dentro de tu región</translation>
+      <translation>Elige una zona dentro de tu región</translation>
     </message>
     <message>
       <location filename="../src/modules/localeq/Offline-qt6.qml" line="193"/>
@@ -2623,7 +2619,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/localeq/Offline-qt6.qml" line="240"/>
       <source>You can fine-tune language and locale settings below</source>
       <comment>@label</comment>
-      <translation>A continuación puede ajustar la configuración Regional y de Idioma</translation>
+      <translation>A continuación puedes ajustar la configuración regional.</translation>
     </message>
   </context>
   <context>
@@ -2925,7 +2921,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
     <message>
       <location filename="../src/modules/packagechooser/PackageChooserPage.cpp" line="25"/>
       <source>Package Selection</source>
-      <translation>Selección de paquetes</translation>
+      <translation>Elegir paquetes</translation>
     </message>
     <message>
       <location filename="../src/modules/packagechooser/PackageChooserPage.cpp" line="26"/>
@@ -2951,7 +2947,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
     <message>
       <location filename="../src/modules/keyboard/KeyboardPage.ui" line="74"/>
       <source>Keyboard model:</source>
-      <translation>Modelo de Teclado:</translation>
+      <translation>Tipo de teclado:</translation>
     </message>
     <message>
       <location filename="../src/modules/keyboard/KeyboardPage.ui" line="146"/>
@@ -2962,7 +2958,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/keyboard/KeyboardPage.ui" line="153"/>
       <source>Switch Keyboard:</source>
       <extracomment>shortcut for switching between keyboard layouts</extracomment>
-      <translation>Cambiar Teclado:</translation>
+      <translation>Cambiar teclado:</translation>
     </message>
   </context>
   <context>
@@ -3028,12 +3024,12 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
     <message>
       <location filename="../src/modules/users/page_usersetup.ui" line="455"/>
       <source>When this box is checked, password-strength checking is done and you will not be able to use a weak password.</source>
-      <translation>Cuando se marca esta casilla se comprueba la seguridad de la contraseña y no se podrá usar una débil.</translation>
+      <translation>Cuando se marca esta casilla se evalua la seguridad y fortaleza de la contraseña y no se podrá usar si es débil.</translation>
     </message>
     <message>
       <location filename="../src/modules/users/page_usersetup.ui" line="458"/>
       <source>Require strong passwords.</source>
-      <translation>Requiere contraseñas fuertes.</translation>
+      <translation>Solo permitir contraseñas seguras, con una complejidad mínima.</translation>
     </message>
     <message>
       <location filename="../src/modules/users/page_usersetup.ui" line="465"/>
@@ -3219,7 +3215,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
     <message>
       <location filename="../src/modules/partition/gui/PartitionPage.ui" line="143"/>
       <source>Resize Volume Group</source>
-      <translation>Cambiar el tamaño del grupo de volúmenes</translation>
+      <translation>Cambiar tamaño del grupo de vol.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/PartitionPage.ui" line="150"/>
@@ -3288,7 +3284,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/partition/PartitionViewStep.cpp" line="157"/>
       <source>&lt;strong&gt;Manual&lt;/strong&gt; partitioning</source>
       <comment>@label</comment>
-      <translation>Particionamiento &lt;strong&gt;manual&lt;/strong&gt;</translation>
+      <translation>Particionado &lt;strong&gt;manual&lt;/strong&gt;</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/PartitionViewStep.cpp" line="179"/>
@@ -3312,7 +3308,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
       <location filename="../src/modules/partition/PartitionViewStep.cpp" line="204"/>
       <source>&lt;strong&gt;Manual&lt;/strong&gt; partitioning on disk &lt;strong&gt;%1&lt;/strong&gt; (%2)</source>
       <comment>@info</comment>
-      <translation>Particionamiento &lt;strong&gt;manual&lt;/strong&gt; en disco &lt;strong&gt;%1&lt;/strong&gt; (%2)</translation>
+      <translation>Particionado &lt;strong&gt;manual&lt;/strong&gt; del disco &lt;strong&gt;%1&lt;/strong&gt; (%2)</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/PartitionViewStep.cpp" line="214"/>
@@ -3396,7 +3392,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
     <message>
       <location filename="../src/modules/partition/PartitionViewStep.cpp" line="587"/>
       <source>You can continue with this EFI system partition configuration but your system may fail to start.</source>
-      <translation>Puede continuar con esta configuración de partición del sistema EFI, pero es posible que su sistema no se inicie.</translation>
+      <translation>Puedes seguir con la instalación con esta configuración para la partición del sistema EFI, pero puede que el sistema no arranque.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/PartitionViewStep.cpp" line="599"/>
@@ -3431,7 +3427,7 @@ El instalador se cerrará y todos tus cambios se perderán.</translation>
     <message>
       <location filename="../src/modules/partition/PartitionViewStep.cpp" line="670"/>
       <source>A separate boot partition was set up together with an encrypted root partition, but the boot partition is not encrypted.&lt;br/&gt;&lt;br/&gt;There are security concerns with this kind of setup, because important system files are kept on an unencrypted partition.&lt;br/&gt;You may continue if you wish, but filesystem unlocking will happen later during system startup.&lt;br/&gt;To encrypt the boot partition, go back and recreate it, selecting &lt;strong&gt;Encrypt&lt;/strong&gt; in the partition creation window.</source>
-      <translation>Se estableció una partición de arranque aparte junto con una partición raíz cifrada, pero la partición de arranque no está cifrada.&lt;br/&gt;&lt;br/&gt;Hay consideraciones de seguridad con esta clase de instalación, porque los ficheros de sistema importantes se mantienen en una partición no cifrada.&lt;br/&gt;Puede continuar si lo desea, pero el desbloqueo del sistema de ficheros ocurrirá más tarde durante el arranque del sistema.&lt;br/&gt;Para cifrar la partición de arranque, retroceda y vuelva a crearla, seleccionando &lt;strong&gt;Cifrar&lt;/strong&gt; en la ventana de creación de la partición.</translation>
+      <translation>La configuración actual consiste en una partición de arranque sin cifrar y una partición raíz cifrada.&lt;br/&gt;&lt;br/&gt;Ten en cuenta que el no cifrar la partición de arranque compromete bastante la seguridad del sistema, porque los ficheros importantes (de los que depende todo lo demás) están visibles en texto plano y se pueden suplantar.&lt;br/&gt;Si quieres puedes continuar, pero la parte de desbloqueo del sistema de archivos ocurrirá en una fase más tardía del arranque.&lt;br/&gt;Para cifrar la partición de arranque ve atrás y recréala, eligiendo la opción de &lt;strong&gt;Cifrar&lt;/strong&gt; en la ventana de creación de la partición.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/PartitionViewStep.cpp" line="762"/>
@@ -3649,7 +3645,7 @@ Información de salida:
       <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="39"/>
       <source>Unpartitioned space or unknown partition table</source>
       <comment>@info</comment>
-      <translation>Espacio no particionado o tabla de partición desconocida</translation>
+      <translation>Espacio en blanco (sin particiciones o un tipo de tabla de particiones desconocido)</translation>
     </message>
   </context>
   <context>
@@ -3684,7 +3680,7 @@ Información de salida:
       <location filename="../src/modules/partition/jobs/RemoveVolumeGroupJob.cpp" line="32"/>
       <source>Removing Volume Group named &lt;strong&gt;%1&lt;/strong&gt;…</source>
       <comment>@status</comment>
-      <translation>Eliminando grupo de volúmenes llamado &lt;strong&gt;%1&lt;/strong&gt;...</translation>
+      <translation>Eliminando el grupo de volúmenes denominado &lt;strong&gt;%1&lt;/strong&gt;...</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/RemoveVolumeGroupJob.cpp" line="46"/>
@@ -3766,7 +3762,7 @@ Información de salida:
       <location filename="../src/modules/fsresizer/ResizeFSJob.cpp" line="234"/>
       <source>Resize Failed</source>
       <comment>@error</comment>
-      <translation>Falló el redimiensionamiento</translation>
+      <translation>No se pudo redimensionar</translation>
     </message>
     <message>
       <location filename="../src/modules/fsresizer/ResizeFSJob.cpp" line="194"/>
@@ -3895,7 +3891,7 @@ Información de salida:
       <location filename="../src/modules/users/SetHostNameJob.cpp" line="48"/>
       <source>Setting hostname %1…</source>
       <comment>@status</comment>
-      <translation>Configurando hostname %1...</translation>
+      <translation>Configurando el nombre de equipo %1...</translation>
     </message>
     <message>
       <location filename="../src/modules/users/SetHostNameJob.cpp" line="121"/>
@@ -3916,7 +3912,7 @@ Información de salida:
       <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="66"/>
       <source>Setting keyboard model to %1, layout as %2-%3…</source>
       <comment>@status, %1 model, %2 layout, %3 variant</comment>
-      <translation>Configurando el modelo de teclado en %1, diseño como %2-%3…</translation>
+      <translation>Asignando el tipo de teclado a «%1», con la distribución de teclas «%2-%3»…</translation>
     </message>
     <message>
       <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="371"/>
@@ -4009,7 +4005,7 @@ Información de salida:
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="94"/>
       <source>Set flags on new partition to &lt;strong&gt;%1&lt;/strong&gt;</source>
       <comment>@info</comment>
-      <translation>Establecer indicadores en la nueva partición en &lt;strong&gt;%1&lt;/strong&gt;</translation>
+      <translation>Establecer indicadores en la nueva partición a &lt;strong&gt;%1&lt;/strong&gt;</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="105"/>
@@ -4039,13 +4035,13 @@ Información de salida:
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="130"/>
       <source>Setting flags &lt;strong&gt;%3&lt;/strong&gt; on %1MiB &lt;strong&gt;%2&lt;/strong&gt; partition…</source>
       <comment>@status</comment>
-      <translation>Estableciendo indicador &lt;strong&gt;%3&lt;/strong&gt;en la particion %1MiB &lt;strong&gt;%2&lt;/strong&gt;</translation>
+      <translation>Estableciendo el indicador &lt;strong&gt;%3&lt;/strong&gt;en la particion %1MiB &lt;strong&gt;%2&lt;/strong&gt;</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="136"/>
       <source>Setting flags &lt;strong&gt;%1&lt;/strong&gt; on new partition…</source>
       <comment>@status</comment>
-      <translation>Configurando indicadores&lt;strong&gt; %1&lt;/strong&gt; en la nueva partición...</translation>
+      <translation>Configurando indicadores &lt;strong&gt;%1&lt;/strong&gt; en la nueva partición...</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="149"/>
@@ -4074,7 +4070,7 @@ Información de salida:
     <message>
       <location filename="../src/modules/users/SetPasswordJob.cpp" line="81"/>
       <source>rootMountPoint is %1</source>
-      <translation>El punto de montaje de la raíz es %1</translation>
+      <translation>«rootMountPoint» es %1</translation>
     </message>
     <message>
       <location filename="../src/modules/users/SetPasswordJob.cpp" line="89"/>
@@ -4328,17 +4324,17 @@ Información de salida:
     <message>
       <location filename="../src/modules/tracking/TrackingPage.cpp" line="100"/>
       <source>By selecting this you will send information about your installation and hardware. This information will only be sent &lt;b&gt;once&lt;/b&gt; after the installation finishes.</source>
-      <translation>Al seleccionar esto, enviará información sobre su instalación y hardware. Esta información solo se enviará &lt;b&gt;una vez&lt;/b&gt; después de finalizar la instalación.</translation>
+      <translation>Al elegir esta opción se enviarán estadísticas sobre las opciones instalación y el hardware actual. Esta información solo se enviará &lt;b&gt;una sola vez&lt;/b&gt; tras terminar la instalación.</translation>
     </message>
     <message>
       <location filename="../src/modules/tracking/TrackingPage.cpp" line="103"/>
       <source>By selecting this you will periodically send information about your &lt;b&gt;machine&lt;/b&gt; installation, hardware and applications, to %1.</source>
-      <translation>Al seleccionar esto, enviará periódicamente información sobre la instalación, el hardware y las aplicaciones de su &lt;b&gt;máquina&lt;/b&gt; a %1.</translation>
+      <translation>Al elegir esta opción se enviarán estadísticas sobre las opciones instalación, el hardware actual y las aplicaciones de tu &lt;b&gt;equipo&lt;/b&gt; a %1 de vez en cuando.</translation>
     </message>
     <message>
       <location filename="../src/modules/tracking/TrackingPage.cpp" line="107"/>
       <source>By selecting this you will regularly send information about your &lt;b&gt;user&lt;/b&gt; installation, hardware, applications and application usage patterns, to %1.</source>
-      <translation>Al seleccionar esto, enviará regularmente información sobre su instalación de &lt;b&gt;usuario&lt;/b&gt;, hardware, aplicaciones y patrones de uso de aplicaciones a %1.</translation>
+      <translation>Al elegir esta opción se enviarán estadísticas sobre la instalación, el tipo de &lt;b&gt;usuario&lt;/b&gt;, hardware actual, aplicaciones y patrones de uso de aplicaciones a %1.</translation>
     </message>
   </context>
   <context>
@@ -4530,7 +4526,7 @@ Información de salida:
       <location filename="../src/modules/welcome/WelcomePage.cpp" line="213"/>
       <source>%1 Support</source>
       <comment>@action</comment>
-      <translation>%1 Ayuda</translation>
+      <translation>Ayuda de %1</translation>
     </message>
   </context>
   <context>
@@ -4539,7 +4535,7 @@ Información de salida:
       <location filename="../src/modules/welcomeq/WelcomeQmlViewStep.cpp" line="40"/>
       <source>Welcome</source>
       <comment>@title</comment>
-      <translation>Te damos la bienvenida</translation>
+      <translation>Primeros pasos</translation>
     </message>
   </context>
   <context>
@@ -4548,7 +4544,7 @@ Información de salida:
       <location filename="../src/modules/welcome/WelcomeViewStep.cpp" line="46"/>
       <source>Welcome</source>
       <comment>@title</comment>
-      <translation>Te damos la bienvenida</translation>
+      <translation>Primeros pasos</translation>
     </message>
   </context>
   <context>
@@ -4745,7 +4741,7 @@ Información de salida:
       <location filename="../src/modules/keyboardq/keyboardq.qml" line="144"/>
       <source>&lt;b&gt;Keyboard model:&amp;nbsp;&amp;nbsp;&lt;/b&gt;</source>
       <comment>@label</comment>
-      <translation>&lt;b&gt;Modelo de Teclado:&amp;nbsp;&amp;nbsp;&lt;/b&gt;</translation>
+      <translation>&lt;b&gt;Tipp de teclado:&amp;nbsp;&amp;nbsp;&lt;/b&gt;</translation>
     </message>
     <message>
       <location filename="../src/modules/keyboardq/keyboardq.qml" line="185"/>
@@ -4778,7 +4774,7 @@ Información de salida:
       <location filename="../src/modules/keyboardq/keyboardq-qt6.qml" line="144"/>
       <source>&lt;b&gt;Keyboard model:&amp;nbsp;&amp;nbsp;&lt;/b&gt;</source>
       <comment>@label</comment>
-      <translation>&lt;b&gt;Modelo de Teclado:&amp;nbsp;&amp;nbsp;&lt;/b&gt;</translation>
+      <translation>&lt;b&gt;Tipo de teclado:&amp;nbsp;&amp;nbsp;&lt;/b&gt;</translation>
     </message>
     <message>
       <location filename="../src/modules/keyboardq/keyboardq-qt6.qml" line="185"/>
@@ -4858,7 +4854,7 @@ La configuración regional del sistema afecta al formato de números y fechas. L
       <source>&lt;h3&gt;%1&lt;/h3&gt;
             &lt;p&gt;These are example release notes.&lt;/p&gt;</source>
       <translation>&lt;h3&gt;%1&lt;/h3&gt;
-            &lt;p&gt;Estos son ejemplos de notas de publicación.&lt;/p&gt;</translation>
+            &lt;p&gt;Aquí tienes unas notas de parche de ejemplo.&lt;/p&gt;</translation>
     </message>
   </context>
   <context>
@@ -5132,7 +5128,7 @@ La barra de desplazamiento vertical es ajustable, el ancho actual está establec
     <message>
       <location filename="../src/modules/usersq/usersq.qml" line="420"/>
       <source>When this box is checked, password-strength checking is done and you will not be able to use a weak password.</source>
-      <translation>Cuando se marca esta casilla se verificará la seguridad de la contraseña y no se podrá usar una contraseña débil.</translation>
+      <translation>Cuando se marca esta casilla se comprueba la seguridad de la contraseña y no se podrá usar una débil.</translation>
     </message>
   </context>
   <context>
@@ -5150,7 +5146,7 @@ La barra de desplazamiento vertical es ajustable, el ancho actual está establec
     <message>
       <location filename="../src/modules/usersq/usersq-qt6.qml" line="62"/>
       <source>Your full name</source>
-      <translation>Su nombre completo</translation>
+      <translation>Tu nombre completo</translation>
     </message>
     <message>
       <location filename="../src/modules/usersq/usersq-qt6.qml" line="79"/>

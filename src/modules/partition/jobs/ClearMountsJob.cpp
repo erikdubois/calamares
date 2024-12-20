@@ -333,7 +333,7 @@ template < typename F >
 void
 apply( const QStringList& paths, F f, QList< MessageAndPath >& news )
 {
-    for ( const QString& p : qAsConst( paths ) )
+    for ( const QString& p : std::as_const( paths ) )
     {
         auto n = f( p );
         if ( !n.isEmpty() )
@@ -347,7 +347,7 @@ STATICTEST QStringList
 stringify( const QList< MessageAndPath >& news )
 {
     QStringList l;
-    for ( const auto& m : qAsConst( news ) )
+    for ( const auto& m : std::as_const( news ) )
     {
         l << QString( m );
     }

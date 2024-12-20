@@ -54,12 +54,12 @@
     <message>
       <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="70"/>
       <source>This system was started with an &lt;strong&gt;EFI&lt;/strong&gt; boot environment.&lt;br&gt;&lt;br&gt;To configure startup from an EFI environment, this installer must deploy a boot loader application, like &lt;strong&gt;GRUB&lt;/strong&gt; or &lt;strong&gt;systemd-boot&lt;/strong&gt; on an &lt;strong&gt;EFI System Partition&lt;/strong&gt;. This is automatic, unless you choose manual partitioning, in which case you must choose it or create it on your own.</source>
-      <translation>Iste systema initiava con un ambiente de initio &lt;strong&gt;EFI&lt;/strong&gt;.&lt;br&gt;&lt;br&gt;Pro configurar le initio ab un ambiente EFI, iste installator debe implementar un application de cargator de initio, como &lt;strong&gt;GRUB&lt;/strong&gt; o &lt;strong&gt;systemd-boot&lt;/strong&gt; sur un &lt;strong&gt;partition de systema EFI&lt;/strong&gt;.  Isto es automatic, a minus que tu selige partitionamento manual, in le qual caso tu debe seliger lo o crear lo tu mesme.</translation>
+      <translation>Iste systema initiava con un ambiente de initio &lt;strong&gt;EFI&lt;/strong&gt;.&lt;br&gt;&lt;br&gt;Pro configurar le initio desde un ambiente EFI, iste installator debe implementar un application de cargator de initio, como &lt;strong&gt;GRUB&lt;/strong&gt; o &lt;strong&gt;systemd-boot&lt;/strong&gt; sur un &lt;strong&gt;partition de systema EFI&lt;/strong&gt;.  Isto es automatic, a minus que tu selectiona partitionamento manual, in le qual caso tu debe selectionar lo o crear lo tu mesme.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="82"/>
       <source>This system was started with a &lt;strong&gt;BIOS&lt;/strong&gt; boot environment.&lt;br&gt;&lt;br&gt;To configure startup from a BIOS environment, this installer must install a boot loader, like &lt;strong&gt;GRUB&lt;/strong&gt;, either at the beginning of a partition or on the &lt;strong&gt;Master Boot Record&lt;/strong&gt; near the beginning of the partition table (preferred). This is automatic, unless you choose manual partitioning, in which case you must set it up on your own.</source>
-      <translation>Iste systema era initiate con un ambiente de initio &lt;strong&gt;BIOS&lt;/strong&gt;.&lt;br&gt;&lt;br&gt;Pro configurar le initio ab un ambiente BIOS, iste installator debe installar un cargator de initio, como &lt;strong&gt;GRUB&lt;/strong&gt;, o al comenciamento de un partition o sur le &lt;strong&gt;registro de initio principal&lt;/strong&gt; presso le comenciamento del tabula de partitiones (preferite). Isto es automatic, a minus que tu selige partitionamento manual, in le qual caso tu debe configurar lo tu mesme.</translation>
+      <translation>Iste systema era initiate con un ambiente de initio &lt;strong&gt;BIOS&lt;/strong&gt;.&lt;br&gt;&lt;br&gt;Pro configurar le initio desde un ambiente BIOS, iste installator debe installar un cargator de initio, como &lt;strong&gt;GRUB&lt;/strong&gt;, o al comenciamento de un partition o sur le &lt;strong&gt;registro de initio principal&lt;/strong&gt; presso le comenciamento del tabellla de partitiones (preferite). Isto es automatic, a minus que tu selectiona partitionamento manual, in le qual caso tu debe configurar lo tu mesme.</translation>
     </message>
   </context>
   <context>
@@ -351,7 +351,7 @@
       <location filename="../src/libcalamaresui/viewpages/QmlViewStep.cpp" line="73"/>
       <source>Loading…</source>
       <comment>@status</comment>
-      <translation>Cargante…</translation>
+      <translation>Cargamento in corso…</translation>
     </message>
     <message>
       <location filename="../src/libcalamaresui/viewpages/QmlViewStep.cpp" line="100"/>
@@ -658,7 +658,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
       <location filename="../src/modules/partition/jobs/ChangeFilesystemLabelJob.cpp" line="50"/>
       <source>Setting filesystem label &lt;strong&gt;%1&lt;/strong&gt; to partition &lt;strong&gt;%2&lt;/strong&gt;…</source>
       <comment>@status</comment>
-      <translation>Definiente le etiquetta del systema de files &lt;strong&gt;%1&lt;/strong&gt; al partition &lt;strong&gt;%2&lt;/strong&gt;…</translation>
+      <translation>Configuration del etiquetta del systema de files &lt;strong&gt;%1&lt;/strong&gt; al partition &lt;strong&gt;%2&lt;/strong&gt;…</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/ChangeFilesystemLabelJob.cpp" line="72"/>
@@ -682,7 +682,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
       <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="137"/>
       <source>Select storage de&amp;vice:</source>
       <comment>@label</comment>
-      <translation>Selige le dispositi&amp;vo de immagazinage:</translation>
+      <translation>Selectiona le dispositi&amp;vo de immagazinage:</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="138"/>
@@ -751,7 +751,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
       <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1762"/>
       <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1784"/>
       <source>&lt;strong&gt;Erase disk&lt;/strong&gt;&lt;br/&gt;This will &lt;font color="red"&gt;delete&lt;/font&gt; all data currently present on the selected storage device.</source>
-      <translation>&lt;strong&gt;Rader disco&lt;/strong&gt;&lt;br/&gt;Iste &lt;font color="red"&gt;delera&lt;/font&gt; tote le datos actualmente presente sur le dispositivo de immagazinage seligite.</translation>
+      <translation>&lt;strong&gt;Rader disco&lt;/strong&gt;&lt;br/&gt;Iste &lt;font color="red"&gt;delera&lt;/font&gt; tote le datos actualmente presente sur le dispositivo de immagazinage selectionate.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1719"/>
@@ -858,7 +858,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
     <message>
       <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="300"/>
       <source>Successfully cleared swap %1.</source>
-      <translation>Le intercambio %1 radite con successo.</translation>
+      <translation>Le intercambio %1 nettate con successo.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="314"/>
@@ -1140,7 +1140,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
     <message>
       <location filename="../src/modules/welcome/Config.cpp" line="80"/>
       <source>This program will ask you some questions and set up %2 on your computer.</source>
-      <translation>Iste programma te demandara alcun questiones e configurara %2 sur tu computator.</translation>
+      <translation>Iste programma te demandara alicun questiones e configurara %2 sur tu computator.</translation>
     </message>
     <message>
       <location filename="../src/modules/welcome/Config.cpp" line="264"/>
@@ -1314,7 +1314,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
       <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="257"/>
       <source>Creating new %1 partition on %2…</source>
       <comment>@status</comment>
-      <translation>Creante nove partition %1 sur %2…</translation>
+      <translation>Creation de nove partition %1 sur %2…</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="274"/>
@@ -1328,17 +1328,17 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
     <message>
       <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="24"/>
       <source>Create Partition Table</source>
-      <translation>Crear le tabula de partitiones</translation>
+      <translation>Crear le tabellla de partitiones</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="43"/>
       <source>Creating a new partition table will delete all existing data on the disk.</source>
-      <translation>Crear un nove tabula de partitiones delera tote le datos existente sur le disco.</translation>
+      <translation>Crear un nove tabellla de partitiones delera tote le datos existente sur le disco.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="69"/>
       <source>What kind of partition table do you want to create?</source>
-      <translation>Qual typo de tabula de partitiones vole tu crear?</translation>
+      <translation>Qual typo de tabellla de partitiones vole tu crear?</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="76"/>
@@ -1348,7 +1348,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
     <message>
       <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="86"/>
       <source>GUID Partition Table (GPT)</source>
-      <translation>Tabula de partitiones GUID (GPT)</translation>
+      <translation>Tabellla de partitiones GUID (GPT)</translation>
     </message>
   </context>
   <context>
@@ -1358,18 +1358,18 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
       <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="58"/>
       <source>Creating new %1 partition table on %2…</source>
       <comment>@status</comment>
-      <translation>Creante nove tabula de partitiones %1 sur %2…</translation>
+      <translation>Creation de nove tabellla de partitiones %1 sur %2…</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="49"/>
       <source>Creating new &lt;strong&gt;%1&lt;/strong&gt; partition table on &lt;strong&gt;%2&lt;/strong&gt; (%3)…</source>
       <comment>@status</comment>
-      <translation>Creante nove tabula de partitiones &lt;strong&gt;%1&lt;/strong&gt; sur &lt;strong&gt;%2&lt;/strong&gt; (%3)…</translation>
+      <translation>Creation de nove tabellla de partitiones &lt;strong&gt;%1&lt;/strong&gt; sur &lt;strong&gt;%2&lt;/strong&gt; (%3)…</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="86"/>
       <source>The installer failed to create a partition table on %1.</source>
-      <translation>Le installator falleva a crear un tabula de partitiones sur %1.</translation>
+      <translation>Le installator falleva a crear un tabellla de partitiones sur %1.</translation>
     </message>
   </context>
   <context>
@@ -1426,13 +1426,13 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
       <location filename="../src/modules/partition/jobs/CreateVolumeGroupJob.cpp" line="44"/>
       <source>Creating new volume group named %1…</source>
       <comment>@status</comment>
-      <translation>Creante le nove gruppo de volumine nominate %1…</translation>
+      <translation>Creation de nove gruppo de volumine nominate %1…</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/CreateVolumeGroupJob.cpp" line="38"/>
       <source>Creating new volume group named &lt;strong&gt;%1&lt;/strong&gt;…</source>
       <comment>@status</comment>
-      <translation>Creante le nove gruppo de volumine nominate &lt;strong&gt;%1&lt;/strong&gt;…</translation>
+      <translation>Creation de nove gruppo de volumine nominate &lt;strong&gt;%1&lt;/strong&gt;…</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/CreateVolumeGroupJob.cpp" line="51"/>
@@ -1487,12 +1487,12 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
     <message>
       <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="78"/>
       <source>&lt;br&gt;&lt;br&gt;This partition table type is only advisable on older systems which start from a &lt;strong&gt;BIOS&lt;/strong&gt; boot environment. GPT is recommended in most other cases.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Warning:&lt;/strong&gt; the MBR partition table is an obsolete MS-DOS era standard.&lt;br&gt;Only 4 &lt;em&gt;primary&lt;/em&gt; partitions may be created, and of those 4, one can be an &lt;em&gt;extended&lt;/em&gt; partition, which may in turn contain many &lt;em&gt;logical&lt;/em&gt; partitions.</source>
-      <translation>&lt;br&gt;&lt;br&gt;Iste typo de tabula de partitiones es solmente consiliabile pro systemas plus vetere que initia ab un ambiente de initio &lt;strong&gt;BIOS&lt;/strong&gt;. GPT es recommendate in le major parte de altere casos.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Aviso:&lt;/strong&gt; le tabula de partitiones MBR es un standard obsolete del era MS-DOS. &lt;br&gt;Solmente 4 partitiones &lt;em&gt;primari&lt;/em&gt; pote esser create, e de aquello 4, un pote esser un partition &lt;em&gt;extendite&lt;/em&gt;, que a su vice pote continer multe partitiones &lt;em&gt;logic&lt;/em&gt;.</translation>
+      <translation>&lt;br&gt;&lt;br&gt;Iste typo de tabellla de partitiones es solmente consiliabile pro systemas plus vetere que initia desde un ambiente de initio &lt;strong&gt;BIOS&lt;/strong&gt;. GPT es recommendate in le major parte de altere casos.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Aviso:&lt;/strong&gt; le tabellla de partitiones MBR es un standard obsolete del era MS-DOS. &lt;br&gt;Solmente 4 partitiones &lt;em&gt;primari&lt;/em&gt; pote esser create, e de aquello 4, un pote esser un partition &lt;em&gt;extendite&lt;/em&gt;, que a su vice pote continer multe partitiones &lt;em&gt;logic&lt;/em&gt;.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="89"/>
       <source>&lt;br&gt;&lt;br&gt;This is the recommended partition table type for modern systems which start from an &lt;strong&gt;EFI&lt;/strong&gt; boot environment.</source>
-      <translation>&lt;br&gt;&lt;br&gt;Isto es le typo de tabula de partitiones recommendate pro systemas moderne que initia ab un ambiente de initio &lt;strong&gt;EFI&lt;/strong&gt;.</translation>
+      <translation>&lt;br&gt;&lt;br&gt;Isto es le typo de tabellla de partitiones recommendate pro systemas moderne que initia desde un ambiente de initio &lt;strong&gt;EFI&lt;/strong&gt;.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="95"/>
@@ -1502,7 +1502,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
     <message>
       <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="104"/>
       <source>This installer &lt;strong&gt;cannot detect a partition table&lt;/strong&gt; on the selected storage device.&lt;br&gt;&lt;br&gt;The device either has no partition table, or the partition table is corrupted or of an unknown type.&lt;br&gt;This installer can create a new partition table for you, either automatically, or through the manual partitioning page.</source>
-      <translation>Iste installator &lt;strong&gt;non pote detectar un tabula de partitiones&lt;/strong&gt; sur le dispositivos de immagazinage seligite.&lt;br&gt;&lt;br&gt;Le dispositivo o non ha un tabula de partitiones, o le tabula de partition es corrumpite o de un typo incognite.&lt;br&gt;Iste installator pote crear un nove tabula de partitiones pro te, o automaticamente o per le pagina de partitionamento manual.</translation>
+      <translation>Iste installator &lt;strong&gt;non pote detectar un tabellla de partitiones&lt;/strong&gt; sur le dispositivos de immagazinage selectionate.&lt;br&gt;&lt;br&gt;Le dispositivo o non ha un tabellla de partitiones, o le tabellla de partition es corrumpite o de un typo discognoscite.&lt;br&gt;Iste installator pote crear un nove tabellla de partitiones pro te, o automaticamente o per le pagina de partitionamento manual.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="139"/>
@@ -1512,7 +1512,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
     <message>
       <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="147"/>
       <source>The type of &lt;strong&gt;partition table&lt;/strong&gt; on the selected storage device.&lt;br&gt;&lt;br&gt;The only way to change the partition table type is to erase and recreate the partition table from scratch, which destroys all data on the storage device.&lt;br&gt;This installer will keep the current partition table unless you explicitly choose otherwise.&lt;br&gt;If unsure, on modern systems GPT is preferred.</source>
-      <translation>Le typo de &lt;strong&gt;tabula de partitiones&lt;/strong&gt; sur le dispositivo de immagazinage seligite.&lt;br&gt;&lt;br&gt;Le sol methodo pro cambiar le typo de tabula de partitiones es rader e recrear le tabula de partitiones ab initio, que destrue tote le datos sur le dispositivo de immagazinage.&lt;br&gt;Iste installator mantenera le tabula de partitiones actual a minus que tu selige explicitemente lo contrari.&lt;br&gt;Si tu es insecur, sur systemas moderne es preferite GPT.</translation>
+      <translation>Le typo de &lt;strong&gt;tabellla de partitiones&lt;/strong&gt; sur le dispositivo de immagazinage selectionate.&lt;br&gt;&lt;br&gt;Le sol methodo pro cambiar le typo de tabellla de partitiones es rader e recrear le tabellla de partitiones de initio, que destrue tote le datos sur le dispositivo de immagazinage.&lt;br&gt;Iste installator mantenera le tabellla de partitiones actual a minus que tu selectiona explicitemente lo contrari.&lt;br&gt;Si tu es insecur, sur systemas moderne es preferite GPT.</translation>
     </message>
   </context>
   <context>
@@ -1542,7 +1542,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
       <location filename="../src/modules/dracutlukscfg/DracutLuksCfgJob.cpp" line="121"/>
       <source>Skipping writing LUKS configuration for Dracut: "/" partition is not encrypted</source>
       <comment>@info</comment>
-      <translation>Saltante le scriptura del configuration LUKS pro Dracut: le partition “/” non es cryptate</translation>
+      <translation>Saltar le scriptura del configuration LUKS pro Dracut: le partition “/” non es cryptate</translation>
     </message>
     <message>
       <location filename="../src/modules/dracutlukscfg/DracutLuksCfgJob.cpp" line="138"/>
@@ -1660,7 +1660,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
       <location filename="../src/modules/partition/gui/EncryptWidget.cpp" line="181"/>
       <source>Please enter the same passphrase in both boxes.</source>
       <comment>@tooltip</comment>
-      <translation>Insere le mesme phrase de contrasigno in ambes quadros.</translation>
+      <translation>Entra le mesme phrase de contrasigno in ambes quadros.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/EncryptWidget.cpp" line="171"/>
@@ -1762,7 +1762,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
       <location filename="../src/modules/finished/FinishedPage.cpp" line="75"/>
       <source>&lt;h1&gt;All done.&lt;/h1&gt;&lt;br/&gt;%1 has been set up on your computer.&lt;br/&gt;You may now start using your new system.</source>
       <comment>@info</comment>
-      <translation>&lt;h1&gt;Tote facite.&lt;/h1&gt;&lt;br/&gt;%1 ha essite configurate in tu computator.&lt;br/&gt;Tu pote ora initiar usante tu nove systema.</translation>
+      <translation>&lt;h1&gt;Toto facite.&lt;/h1&gt;&lt;br/&gt;%1 ha essite configurate in tu computator.&lt;br/&gt;Tu pote ora initiar a usar tu nove systema.</translation>
     </message>
     <message>
       <location filename="../src/modules/finished/FinishedPage.cpp" line="80"/>
@@ -1774,7 +1774,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
       <location filename="../src/modules/finished/FinishedPage.cpp" line="89"/>
       <source>&lt;h1&gt;All done.&lt;/h1&gt;&lt;br/&gt;%1 has been installed on your computer.&lt;br/&gt;You may now restart into your new system, or continue using the %2 Live environment.</source>
       <comment>@info</comment>
-      <translation>&lt;h1&gt;Tote facite.&lt;/h1&gt;&lt;br/&gt;%1 ha essite installate in tu computator.&lt;br/&gt;Tu pote ora reinitiar in tu nove systema, o continuar usante le ambiente in vivo de %2.</translation>
+      <translation>&lt;h1&gt;Toto facite.&lt;/h1&gt;&lt;br/&gt;%1 ha essite installate in tu computator.&lt;br/&gt;Tu pote ora reinitiar in tu nove systema, o continuar a usar le ambiente in vivo de %2.</translation>
     </message>
     <message>
       <location filename="../src/modules/finished/FinishedPage.cpp" line="95"/>
@@ -1895,7 +1895,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
     <message>
       <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="200"/>
       <source>is running the installer as an administrator (root)</source>
-      <translation>il es executante le installator como un administrator (“root”)</translation>
+      <translation>il es in execution le installator como un administrator (“root”)</translation>
     </message>
     <message>
       <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="204"/>
@@ -2087,7 +2087,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
       <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="30"/>
       <source>The system locale setting affects the language and character set for some command line user interface elements.&lt;br/&gt;The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
       <comment>@info</comment>
-      <translation>Le parametros regional del systema affecta le lingua e le collection de characteres pro alcun elementos del interfacie de usator del linea de commando.&lt;br/&gt;Le parametro actual es &lt;strong&gt;%1&lt;/strong&gt;.</translation>
+      <translation>Le configuration regional del systema affecta le lingua e le collection de characteres pro alicun elementos del interfacie de usator del linea de commando.&lt;br/&gt;Le configuration actual es &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
       <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="55"/>
@@ -2552,7 +2552,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
       <location filename="../src/modules/localeq/Offline.qml" line="47"/>
       <source>Select your preferred region, or use the default settings</source>
       <comment>@label</comment>
-      <translation>Selige tu region preferite, o usa le parametros predefinite</translation>
+      <translation>Selectiona tu region preferite, o usa le configurationes predefinite</translation>
     </message>
     <message>
       <location filename="../src/modules/localeq/Offline.qml" line="103"/>
@@ -2587,7 +2587,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
       <location filename="../src/modules/localeq/Offline-qt6.qml" line="47"/>
       <source>Select your preferred region, or use the default settings</source>
       <comment>@label</comment>
-      <translation>Selige tu region preferite, o usa le parametros predefinite</translation>
+      <translation>Selectiona tu region preferite, o usa le configurationes predefinite</translation>
     </message>
     <message>
       <location filename="../src/modules/localeq/Offline-qt6.qml" line="103"/>
@@ -2808,7 +2808,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
     <message>
       <location filename="../src/modules/users/CheckPWQuality.cpp" line="292"/>
       <source>Cannot obtain random numbers from the RNG device</source>
-      <translation>Non pote obtener numeros aleatori ab le dispositivo RNG</translation>
+      <translation>Non pote obtener numeros aleatori desde le dispositivo RNG</translation>
     </message>
     <message>
       <location filename="../src/modules/users/CheckPWQuality.cpp" line="294"/>
@@ -3175,7 +3175,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
     <message>
       <location filename="../src/modules/partition/gui/PartitionPage.ui" line="91"/>
       <source>New Partition &amp;Table</source>
-      <translation>Nove &amp;tabula de partitiones</translation>
+      <translation>Nove &amp;tabellla de partitiones</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/PartitionPage.ui" line="111"/>
@@ -3220,7 +3220,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
     <message>
       <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="227"/>
       <source>Are you sure you want to create a new partition table on %1?</source>
-      <translation>Es tu secur que tu vole crear un nove tabula de partitiones sur %1?</translation>
+      <translation>Es tu secur que tu vole crear un nove tabellla de partitiones sur %1?</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="262"/>
@@ -3230,7 +3230,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
     <message>
       <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="263"/>
       <source>The partition table on %1 already has %2 primary partitions, and no more can be added. Please remove one primary partition and add an extended partition, instead.</source>
-      <translation>Le tabula de partitiones sur %1 ja ha %2 partitiones primari, e non pote esser addite alteres. Remove un partition primari e adde un partition extendite, in vice.</translation>
+      <translation>Le tabella de partitiones sur %1 jam ha %2 partitiones primari, e non pote esser addite alteres. Remove un partition primari e adde un partition extendite, in vice.</translation>
     </message>
   </context>
   <context>
@@ -3412,7 +3412,7 @@ Le installator claudera e tote le cambiamentos sera perdite.</translation>
     <message>
       <location filename="../src/modules/partition/PartitionViewStep.cpp" line="670"/>
       <source>A separate boot partition was set up together with an encrypted root partition, but the boot partition is not encrypted.&lt;br/&gt;&lt;br/&gt;There are security concerns with this kind of setup, because important system files are kept on an unencrypted partition.&lt;br/&gt;You may continue if you wish, but filesystem unlocking will happen later during system startup.&lt;br/&gt;To encrypt the boot partition, go back and recreate it, selecting &lt;strong&gt;Encrypt&lt;/strong&gt; in the partition creation window.</source>
-      <translation>Un partition de initio separate era configurate insimul con un partition de radice cryptate, ma le partition de initio non es cryptate.&lt;br/&gt;&lt;br/&gt;Il ha problemas de securitate con iste typo de configuration, perque le files importante del systema son mantenite sur un partition non cryptate.&lt;br/&gt;Tu pote continuar si tu vole, ma le disblocar del systema de files occurrera plus tarde durante le initio del systema.&lt;br/&gt;Pro cryptar le partition de initio, retorna e recrea lo, seligente &lt;strong&gt;Cryptar&lt;/strong&gt; in le fenestra de creation de partitiones.</translation>
+      <translation>Un partition de initio separate era configurate insimul con un partition de radice cryptate, ma le partition de initio non es cryptate.&lt;br/&gt;&lt;br/&gt;Il ha problemas de securitate con iste typo de configuration, perque le files importante del systema son mantenite sur un partition non cryptate.&lt;br/&gt;Tu pote continuar si tu vole, ma le disblocar del systema de files occurrera plus tarde durante le initio del systema.&lt;br/&gt;Pro cryptar le partition de initio, retorna e recrea lo, in selectionar &lt;strong&gt;Cryptar&lt;/strong&gt; in le fenestra de creation de partitiones.</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/PartitionViewStep.cpp" line="762"/>
@@ -3627,7 +3627,7 @@ Output:
       <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="39"/>
       <source>Unpartitioned space or unknown partition table</source>
       <comment>@info</comment>
-      <translation>Spatio non partitionate o tabula de partitiones incognite</translation>
+      <translation>Spatio non partitionate o tabellla de partitiones discognoscite</translation>
     </message>
   </context>
   <context>
@@ -3655,13 +3655,13 @@ Output:
       <location filename="../src/modules/partition/jobs/RemoveVolumeGroupJob.cpp" line="38"/>
       <source>Removing Volume Group named %1…</source>
       <comment>@status</comment>
-      <translation>Removente le gruppo de volumine nominate %1…</translation>
+      <translation>Remotion de gruppo de volumine nominate %1…</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/RemoveVolumeGroupJob.cpp" line="32"/>
       <source>Removing Volume Group named &lt;strong&gt;%1&lt;/strong&gt;…</source>
       <comment>@status</comment>
-      <translation>Removente le gruppo de volumine nominate &lt;strong&gt;%1&lt;/strong&gt;…</translation>
+      <translation>Remotion de gruppo de volumine nominate &lt;strong&gt;%1&lt;/strong&gt;…</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/RemoveVolumeGroupJob.cpp" line="46"/>
@@ -3812,19 +3812,19 @@ Output:
       <location filename="../src/modules/partition/jobs/ResizeVolumeGroupJob.cpp" line="28"/>
       <source>Resize volume group named %1 from %2 to %3</source>
       <comment>@title</comment>
-      <translation>Redimensionar le gruppo de volumine nominate %1 ab %2 a %3</translation>
+      <translation>Redimensionar le gruppo de volumine nominate %1 de %2 a %3</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/ResizeVolumeGroupJob.cpp" line="37"/>
       <source>Resize volume group named &lt;strong&gt;%1&lt;/strong&gt; from &lt;strong&gt;%2&lt;/strong&gt; to &lt;strong&gt;%3&lt;/strong&gt;</source>
       <comment>@info</comment>
-      <translation>Redimensionar le gruppo de volumine nominate &lt;strong&gt;%1&lt;/strong&gt; ab &lt;strong&gt;%2&lt;/strong&gt; a &lt;strong&gt;%3&lt;/strong&gt;</translation>
+      <translation>Redimensionar le gruppo de volumine nominate &lt;strong&gt;%1&lt;/strong&gt; de &lt;strong&gt;%2&lt;/strong&gt; a &lt;strong&gt;%3&lt;/strong&gt;</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/ResizeVolumeGroupJob.cpp" line="47"/>
       <source>Resizing volume group named %1 from %2 to %3…</source>
       <comment>@status</comment>
-      <translation>Redimensionante le gruppo de volumine nominate %1 ab %2 a %3…</translation>
+      <translation>Redimensionante le gruppo de volumine nominate %1 de %2 a %3…</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/ResizeVolumeGroupJob.cpp" line="58"/>
@@ -3955,19 +3955,19 @@ Output:
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="65"/>
       <source>Clear flags on partition &lt;strong&gt;%1&lt;/strong&gt;</source>
       <comment>@info</comment>
-      <translation>Rader le marcas sur le partition &lt;strong&gt;%1&lt;/strong&gt;</translation>
+      <translation>Nettar marcas sur partition &lt;strong&gt;%1&lt;/strong&gt;</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="71"/>
       <source>Clear flags on %1MiB &lt;strong&gt;%2&lt;/strong&gt; partition</source>
       <comment>@info</comment>
-      <translation>Rader le marcas sur le partition &lt;strong&gt;%2&lt;/strong&gt; de 1% MiB</translation>
+      <translation>Nettar marcas sur partition &lt;strong&gt;%2&lt;/strong&gt; de 1% MiB</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="75"/>
       <source>Clear flags on new partition</source>
       <comment>@info</comment>
-      <translation>Rader le marcas sur le nove partition</translation>
+      <translation>Nettar marcas sur nove partition</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="80"/>
@@ -3991,37 +3991,37 @@ Output:
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="105"/>
       <source>Clearing flags on partition &lt;strong&gt;%1&lt;/strong&gt;…</source>
       <comment>@status</comment>
-      <translation>Radente le marcas sur le partition &lt;strong&gt;%1&lt;/strong&gt;…</translation>
+      <translation>Nettation de marcas sur partition &lt;strong&gt;%1&lt;/strong&gt;…</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="112"/>
       <source>Clearing flags on %1MiB &lt;strong&gt;%2&lt;/strong&gt; partition…</source>
       <comment>@status</comment>
-      <translation>Radente le marcas sur le partition &lt;strong&gt;2%&lt;/strong&gt; de %1 MiB</translation>
+      <translation>Nettation de marcas sur partition &lt;strong&gt;2%&lt;/strong&gt; de %1 MiB</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="117"/>
       <source>Clearing flags on new partition…</source>
       <comment>@status</comment>
-      <translation>Radente le marcas sur le nove partition…</translation>
+      <translation>Nettation de marcas sur nove partition…</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="122"/>
       <source>Setting flags &lt;strong&gt;%2&lt;/strong&gt; on partition &lt;strong&gt;%1&lt;/strong&gt;…</source>
       <comment>@status</comment>
-      <translation>Definiente le marcas &lt;strong&gt;%2&lt;/strong&gt; sur le partition &lt;strong&gt;%1&lt;/strong&gt;…</translation>
+      <translation>Configuration de marcas &lt;strong&gt;%2&lt;/strong&gt; sur le partition &lt;strong&gt;%1&lt;/strong&gt;…</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="130"/>
       <source>Setting flags &lt;strong&gt;%3&lt;/strong&gt; on %1MiB &lt;strong&gt;%2&lt;/strong&gt; partition…</source>
       <comment>@status</comment>
-      <translation>Definiente le marcas &lt;strong&gt;%3&lt;/strong&gt; sur le partition &lt;strong&gt;%2&lt;/strong&gt; de %1 MiB…</translation>
+      <translation>Configuration de marcas &lt;strong&gt;%3&lt;/strong&gt; sur le partition &lt;strong&gt;%2&lt;/strong&gt; de %1 MiB…</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="136"/>
       <source>Setting flags &lt;strong&gt;%1&lt;/strong&gt; on new partition…</source>
       <comment>@status</comment>
-      <translation>Definiente le marcas &lt;strong&gt;%1&lt;/strong&gt; sur le nove partition…</translation>
+      <translation>Configuration de marcas &lt;strong&gt;%1&lt;/strong&gt; sur le nove partition…</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="149"/>
@@ -4075,13 +4075,13 @@ Output:
       <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="32"/>
       <source>Setting timezone to %1/%2…</source>
       <comment>@status</comment>
-      <translation>Definiente le fuso horari a %1/%2…</translation>
+      <translation>Configuration de fuso horari a %1/%2…</translation>
     </message>
     <message>
       <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="60"/>
       <source>Cannot access selected timezone path.</source>
       <comment>@error</comment>
-      <translation>Non pote acceder al percurso del fuso horari seligite.</translation>
+      <translation>Non pote acceder al percurso del fuso horari selectionate.</translation>
     </message>
     <message>
       <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="61"/>
@@ -4206,7 +4206,7 @@ Output:
       <location filename="../src/modules/tracking/TrackingJobs.cpp" line="106"/>
       <source>Sending installation feedback…</source>
       <comment>@status</comment>
-      <translation>Inviante le evalutation del installation…</translation>
+      <translation>Invio de evalutation del installation…</translation>
     </message>
     <message>
       <location filename="../src/modules/tracking/TrackingJobs.cpp" line="124"/>
@@ -4404,12 +4404,12 @@ Output:
     <message>
       <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="34"/>
       <source>Volume Group Name:</source>
-      <translation>Nomine del gruppo de volumine:</translation>
+      <translation>Nomine de gruppo de volumine:</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="47"/>
       <source>Volume Group Type:</source>
-      <translation>Typo del gruppo de volumine:</translation>
+      <translation>Typo de gruppo de volumine:</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="60"/>
@@ -4453,7 +4453,7 @@ Output:
     <message>
       <location filename="../src/modules/welcome/WelcomePage.ui" line="140"/>
       <source>Open donations website</source>
-      <translation>Aperir le sito web de donationes</translation>
+      <translation>Aperir sito web de donationes</translation>
     </message>
     <message>
       <location filename="../src/modules/welcome/WelcomePage.ui" line="143"/>
@@ -4473,12 +4473,12 @@ Output:
     <message>
       <location filename="../src/modules/welcome/WelcomePage.ui" line="166"/>
       <source>Open issues and bug-tracking website</source>
-      <translation>Aperir le sito web de traciamento de problemas</translation>
+      <translation>Aperir sito web de traciamento de incidentes</translation>
     </message>
     <message>
       <location filename="../src/modules/welcome/WelcomePage.ui" line="169"/>
       <source>&amp;Known issues</source>
-      <translation>Defectos &amp;cognoscite</translation>
+      <translation>Incidentes &amp;cognoscite</translation>
     </message>
     <message>
       <location filename="../src/modules/welcome/WelcomePage.ui" line="179"/>
@@ -4548,7 +4548,7 @@ Output:
     <message>
       <location filename="../src/modules/zfs/ZfsJob.cpp" line="181"/>
       <source>No partitions are available for ZFS.</source>
-      <translation>Necun partitiones son disponibile pro ZFS.</translation>
+      <translation>Necun partition es disponibile pro ZFS.</translation>
     </message>
     <message>
       <location filename="../src/modules/zfs/ZfsJob.cpp" line="192"/>
@@ -4786,7 +4786,7 @@ Output:
                             The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
       <comment>@info</comment>
       <translation>&lt;h3&gt;Linguas&lt;/h3&gt; &lt;/br&gt;
-                            Le parametro regional del systema affecta le lingua e le collection de characteres pro alcun elementos del interfacie de usator del linea de commando. Le parametro actual es &lt;strong&gt;%1&lt;/strong&gt;.</translation>
+                            Le configuration regional del systema affecta le lingua e le collection de characteres pro alicun elementos del interfacie de usator del linea de commando. Le configuration actual es &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
       <location filename="../src/modules/localeq/localeq.qml" line="213"/>
@@ -4811,7 +4811,7 @@ Output:
                             The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
       <comment>@info</comment>
       <translation>&lt;h3&gt;Linguas&lt;/h3&gt; &lt;/br&gt;
-                            Le parametro regional del systema affecta le lingua e le collection de characteres pro alcun elementos del interfacie de usator del linea de commando. Le parametro actual es &lt;strong&gt;%1&lt;/strong&gt;.</translation>
+                            Le configuration regional del systema affecta le lingua e le collection de characteres pro alicun elementos del interfacie de usator del linea de commando. Le configuration actual es &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
       <location filename="../src/modules/localeq/localeq-qt6.qml" line="213"/>
@@ -4847,7 +4847,7 @@ Output:
     <message>
       <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="108"/>
       <source>If you don't want to install an office suite, just select No Office Suite. You can always add one (or more) later on your installed system as the need arrives.</source>
-      <translation>Si tu non vole installar un suite de officio, solmente selige Necun suite de officio. Tu pote sempre adder un (o plus) depost sur tu systema installate quando le necessitate se presenta.</translation>
+      <translation>Si tu non vole installar un suite de officio, solmente selectionate Necun suite de officio. Tu pote sempre adder un (o plus) depost sur tu systema installate quando le necessitate se presenta.</translation>
     </message>
     <message>
       <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="121"/>
@@ -4886,7 +4886,7 @@ Output:
     <message>
       <location filename="../src/modules/packagechooserq/packagechooserq-qt6.qml" line="108"/>
       <source>If you don't want to install an office suite, just select No Office Suite. You can always add one (or more) later on your installed system as the need arrives.</source>
-      <translation>Si tu non vole installar un suite de officio, solmente selige Necun suite de officio. Tu pote sempre adder un (o plus) depost sur tu systema installate quando le necessitate se presenta.</translation>
+      <translation>Si tu non vole installar un suite de officio, solmente selectiona Necun suite de officio. Tu pote sempre adder un (o plus) depost sur tu systema installate quando le necessitate se presenta.</translation>
     </message>
     <message>
       <location filename="../src/modules/packagechooserq/packagechooserq-qt6.qml" line="121"/>
@@ -5036,7 +5036,7 @@ The vertical scrollbar is adjustable, current width set to 10.</source>
     <message>
       <location filename="../src/modules/usersq/usersq.qml" line="297"/>
       <source>Reuse user password as root password</source>
-      <translation>Reutilisar le contrasigno del usator como contrasigno del superusator</translation>
+      <translation>Reutilisar le contrasigno de usator como contrasigno de superusator</translation>
     </message>
     <message>
       <location filename="../src/modules/usersq/usersq.qml" line="305"/>
@@ -5046,7 +5046,7 @@ The vertical scrollbar is adjustable, current width set to 10.</source>
     <message>
       <location filename="../src/modules/usersq/usersq.qml" line="318"/>
       <source>Choose a root password to keep your account safe.</source>
-      <translation>Elige un contrasigno del superusator pro conservar tu conto secur.</translation>
+      <translation>Elige un contrasigno de superusator pro conservar tu conto secur.</translation>
     </message>
     <message>
       <location filename="../src/modules/usersq/usersq.qml" line="328"/>
@@ -5169,7 +5169,7 @@ The vertical scrollbar is adjustable, current width set to 10.</source>
     <message>
       <location filename="../src/modules/usersq/usersq-qt6.qml" line="296"/>
       <source>Reuse user password as root password</source>
-      <translation>Reutilisar le contrasigno del usator como contrasigno del superusator</translation>
+      <translation>Reutilisar le contrasigno de usator como contrasigno de superusator</translation>
     </message>
     <message>
       <location filename="../src/modules/usersq/usersq-qt6.qml" line="304"/>
@@ -5179,7 +5179,7 @@ The vertical scrollbar is adjustable, current width set to 10.</source>
     <message>
       <location filename="../src/modules/usersq/usersq-qt6.qml" line="317"/>
       <source>Choose a root password to keep your account safe.</source>
-      <translation>Elige un contrasigno del superusator pro conservar tu conto secur.</translation>
+      <translation>Elige un contrasigno de superusator pro conservar tu conto secur.</translation>
     </message>
     <message>
       <location filename="../src/modules/usersq/usersq-qt6.qml" line="327"/>
@@ -5204,7 +5204,7 @@ The vertical scrollbar is adjustable, current width set to 10.</source>
     <message>
       <location filename="../src/modules/usersq/usersq-qt6.qml" line="409"/>
       <source>Validate passwords quality</source>
-      <translation>Validar le qualitate de contrasignos</translation>
+      <translation>Validar qualitate de contrasignos</translation>
     </message>
     <message>
       <location filename="../src/modules/usersq/usersq-qt6.qml" line="419"/>
@@ -5219,7 +5219,7 @@ The vertical scrollbar is adjustable, current width set to 10.</source>
       <source>&lt;h3&gt;Welcome to the %1 &lt;quote&gt;%2&lt;/quote&gt; installer&lt;/h3&gt;
             &lt;p&gt;This program will ask you some questions and set up %1 on your computer.&lt;/p&gt;</source>
       <translation>&lt;h3&gt;Benvenite al installator de &lt;quote&gt;%2&lt;/quote&gt; pro %1&lt;/h3&gt;
-            &lt;p&gt;Iste programma te demandara alcun questiones e configurara %1 sur tu computator.&lt;/p&gt;</translation>
+            &lt;p&gt;Iste programma te demandara alicun questiones e configurara %1 sur tu computator.&lt;/p&gt;</translation>
     </message>
     <message>
       <location filename="../src/modules/welcomeq/welcomeq.qml" line="69"/>
@@ -5229,7 +5229,7 @@ The vertical scrollbar is adjustable, current width set to 10.</source>
     <message>
       <location filename="../src/modules/welcomeq/welcomeq.qml" line="80"/>
       <source>Known Issues</source>
-      <translation>Problemas cognoscite</translation>
+      <translation>Incidentes cognoscite</translation>
     </message>
     <message>
       <location filename="../src/modules/welcomeq/welcomeq.qml" line="91"/>
@@ -5249,7 +5249,7 @@ The vertical scrollbar is adjustable, current width set to 10.</source>
       <source>&lt;h3&gt;Welcome to the %1 &lt;quote&gt;%2&lt;/quote&gt; installer&lt;/h3&gt;
             &lt;p&gt;This program will ask you some questions and set up %1 on your computer.&lt;/p&gt;</source>
       <translation>&lt;h3&gt;Benvenite al installator de &lt;quote&gt;%2&lt;/quote&gt; pro %1&lt;/h3&gt;
-            &lt;p&gt;Iste programma te demandara alcun questiones e configurara %1 sur tu computator.&lt;/p&gt;</translation>
+            &lt;p&gt;Iste programma te demandara alicun questiones e configurara %1 sur tu computator.&lt;/p&gt;</translation>
     </message>
     <message>
       <location filename="../src/modules/welcomeq/welcomeq-qt6.qml" line="69"/>

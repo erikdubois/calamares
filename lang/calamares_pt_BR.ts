@@ -26,13 +26,13 @@
       <location filename="../src/modules/users/ActiveDirectoryJob.cpp" line="39"/>
       <source>Enroll system in Active Directory</source>
       <comment>@label</comment>
-      <translation type="unfinished"/>
+      <translation>Registrar o sistema no Active Directory</translation>
     </message>
     <message>
       <location filename="../src/modules/users/ActiveDirectoryJob.cpp" line="45"/>
       <source>Enrolling system in Active Directory…</source>
       <comment>@status</comment>
-      <translation type="unfinished"/>
+      <translation>Registrando o sistema no Active Directory...</translation>
     </message>
   </context>
   <context>
@@ -107,12 +107,12 @@
     <message>
       <location filename="../src/calamares/DebugWindow.ui" line="28"/>
       <source>GlobalStorage</source>
-      <translation>Armazenamento Global</translation>
+      <translation>GlobalStorage</translation>
     </message>
     <message>
       <location filename="../src/calamares/DebugWindow.ui" line="38"/>
       <source>JobQueue</source>
-      <translation>Fila de Trabalhos</translation>
+      <translation>JobQueue</translation>
     </message>
     <message>
       <location filename="../src/calamares/DebugWindow.ui" line="48"/>
@@ -976,7 +976,7 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
       <location filename="../src/modules/keyboard/Config.cpp" line="504"/>
       <source>Keyboard model has been set to %1.</source>
       <comment>@label, %1 is keyboard model, as in Apple Magic Keyboard</comment>
-      <translation type="unfinished"/>
+      <translation>modelo teclado foi configurado para 1</translation>
     </message>
     <message>
       <location filename="../src/modules/keyboard/Config.cpp" line="512"/>
@@ -988,7 +988,7 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
       <location filename="../src/modules/locale/Config.cpp" line="381"/>
       <source>Set timezone to %1.</source>
       <comment>@action</comment>
-      <translation type="unfinished"/>
+      <translation>Configure timezone para 1</translation>
     </message>
     <message>
       <location filename="../src/modules/locale/Config.cpp" line="418"/>
@@ -3059,27 +3059,27 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
     <message>
       <location filename="../src/modules/users/page_usersetup.ui" line="627"/>
       <source>Use Active Directory</source>
-      <translation type="unfinished"/>
+      <translation>Use o Active Directory</translation>
     </message>
     <message>
       <location filename="../src/modules/users/page_usersetup.ui" line="638"/>
       <source>Domain:</source>
-      <translation type="unfinished"/>
+      <translation>Domínio:</translation>
     </message>
     <message>
       <location filename="../src/modules/users/page_usersetup.ui" line="652"/>
       <source>Domain Administrator:</source>
-      <translation type="unfinished"/>
+      <translation>Domínio Administrador:</translation>
     </message>
     <message>
       <location filename="../src/modules/users/page_usersetup.ui" line="662"/>
       <source>Password:</source>
-      <translation type="unfinished"/>
+      <translation>Senha:</translation>
     </message>
     <message>
       <location filename="../src/modules/users/page_usersetup.ui" line="680"/>
       <source>IP Address (optional):</source>
-      <translation type="unfinished"/>
+      <translation>Endereço IP (opcional):</translation>
     </message>
   </context>
   <context>
@@ -3323,7 +3323,7 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
     <message>
       <location filename="../src/modules/partition/PartitionViewStep.cpp" line="239"/>
       <source>Create a swap file.</source>
-      <translation type="unfinished"/>
+      <translation>Criar arquivo de swap</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/PartitionViewStep.cpp" line="268"/>
@@ -3486,13 +3486,13 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
     <message>
       <location filename="../src/libcalamares/JobQueue.cpp" line="138"/>
       <source>Calamares</source>
-      <translation type="unfinished"/>
+      <translation>Calamares</translation>
     </message>
     <message>
       <location filename="../src/libcalamares/JobQueue.cpp" line="138"/>
       <source>Installation in progress</source>
       <comment>@status</comment>
-      <translation type="unfinished"/>
+      <translation>Instalação em progresso</translation>
     </message>
   </context>
   <context>
@@ -4968,7 +4968,31 @@ ls -l /home
  * AMD CPU systems
 
 The vertical scrollbar is adjustable, current width set to 10.</source>
-      <translation type="unfinished"/>
+      <translation>### %1
+This an example QML file, showing options in Markdown with Flickable content.
+
+QML with RichText can use HTML tags, with Markdown it uses the simple Markdown syntax, Flickable content is useful for touchscreens.
+
+**This is bold text**
+
+*This is italic text*
+
+_This is underlined text_
+
+&gt; blockquote
+
+~~This is strikethrough~~
+
+Code example:
+```
+ls -l /home
+```
+
+**Lists:**
+ * Intel CPU systems
+ * AMD CPU systems
+
+The vertical scrollbar is adjustable, current width set to 10.</translation>
     </message>
     <message>
       <location filename="../src/modules/welcomeq/release_notes.qml" line="80"/>

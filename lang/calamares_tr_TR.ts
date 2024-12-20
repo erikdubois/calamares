@@ -707,7 +707,7 @@ Kurulum programından çıkılacak ve tüm değişiklikler kaybedilecek.</transl
       <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="897"/>
       <source>Reuse %1 as home partition for %2</source>
       <comment>@label</comment>
-      <translation>%1 bölümünü %2 için ev bölümü olarak yeniden kullanın</translation>
+      <translation>%1 bölümünü %2 için kullanıcı bölümü olarak yeniden kullan</translation>
     </message>
     <message>
       <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1040"/>
@@ -2561,7 +2561,7 @@ Kurulum sürdürülebilir; ancak bazı özellikler devre dışı bırakılabilir
       <location filename="../src/modules/localeq/Offline.qml" line="47"/>
       <source>Select your preferred region, or use the default settings</source>
       <comment>@label</comment>
-      <translation>Tercih ettiğiniz bölgeyi seçin veya varsayılan ayarları kullanın</translation>
+      <translation>Tercih ettiğiniz bölgeyi seçin veya öntanımlı ayarları kullanın</translation>
     </message>
     <message>
       <location filename="../src/modules/localeq/Offline.qml" line="103"/>
@@ -2596,7 +2596,7 @@ Kurulum sürdürülebilir; ancak bazı özellikler devre dışı bırakılabilir
       <location filename="../src/modules/localeq/Offline-qt6.qml" line="47"/>
       <source>Select your preferred region, or use the default settings</source>
       <comment>@label</comment>
-      <translation>Tercih ettiğiniz bölgeyi seçin veya varsayılan ayarları kullanın</translation>
+      <translation>Tercih ettiğiniz bölgeyi seçin veya öntanımlı ayarları kullanın</translation>
     </message>
     <message>
       <location filename="../src/modules/localeq/Offline-qt6.qml" line="103"/>

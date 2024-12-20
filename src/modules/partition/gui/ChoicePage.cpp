@@ -34,6 +34,7 @@
 #include "Branding.h"
 #include "GlobalStorage.h"
 #include "JobQueue.h"
+#include "compat/CheckBox.h"
 #include "partition/PartitionIterator.h"
 #include "partition/PartitionQuery.h"
 #include "utils/Gui.h"
@@ -187,7 +188,7 @@ ChoicePage::init( PartitionCoreModule* core )
 
     connect( m_drivesCombo, qOverload< int >( &QComboBox::currentIndexChanged ), this, &ChoicePage::applyDeviceChoice );
     connect( m_encryptWidget, &EncryptWidget::stateChanged, this, &ChoicePage::onEncryptWidgetStateChanged );
-    connect( m_reuseHomeCheckBox, &QCheckBox::stateChanged, this, &ChoicePage::onHomeCheckBoxStateChanged );
+    connect( m_reuseHomeCheckBox, Calamares::checkBoxStateChangedSignal, this, &ChoicePage::onHomeCheckBoxStateChanged );
 
     ChoicePage::applyDeviceChoice();
 }
@@ -361,7 +362,8 @@ ChoicePage::setupChoices()
 Device*
 ChoicePage::selectedDevice()
 {
-    Device* const currentDevice = m_core->deviceModel()->deviceForIndex( m_core->deviceModel()->index( m_drivesCombo->currentIndex() ) );
+    Device* const currentDevice
+        = m_core->deviceModel()->deviceForIndex( m_core->deviceModel()->index( m_drivesCombo->currentIndex() ) );
     return currentDevice;
 }
 
@@ -1031,7 +1033,7 @@ ChoicePage::updateActionChoicePreview( InstallChoice choice )
         if ( m_enableEncryptionWidget )
         {
             m_encryptWidget->show();
-            if ( m_config->preCheckEncryption() && ! m_preCheckActivated )
+            if ( m_config->preCheckEncryption() && !m_preCheckActivated )
             {
                 m_encryptWidget->setEncryptionCheckbox( true );
                 m_preCheckActivated = true;
@@ -1091,7 +1093,7 @@ ChoicePage::updateActionChoicePreview( InstallChoice choice )
         if ( shouldShowEncryptWidget( choice ) )
         {
             m_encryptWidget->show();
-            if ( m_config->preCheckEncryption() && ! m_preCheckActivated )
+            if ( m_config->preCheckEncryption() && !m_preCheckActivated )
             {
                 m_encryptWidget->setEncryptionCheckbox( true );
                 m_preCheckActivated = true;
@@ -1788,7 +1790,8 @@ ChoicePage::updateActionDescriptionsTr()
                                     "currently present on the selected storage device." ) );
 
         m_replaceButton->setText( tr( "<strong>Replace a partition</strong><br/>"
-                                      "Replaces a partition with %1." ) );
+                                      "Replaces a partition with %1." )
+                                      .arg( Calamares::Branding::instance()->shortVersionedName() ) );
     }
     if ( m_osproberEntriesCount < 0 )
     {

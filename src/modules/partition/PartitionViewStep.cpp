@@ -117,7 +117,7 @@ static QStringList
 jobDescriptions( const Calamares::JobList& jobs )
 {
     QStringList jobsLines;
-    for ( const Calamares::job_ptr& job : qAsConst( jobs ) )
+    for ( const Calamares::job_ptr& job : std::as_const( jobs ) )
     {
         const auto description = job->prettyDescription();
         if ( !description.isEmpty() )
@@ -478,7 +478,7 @@ shouldWarnForGPTOnBIOS( const PartitionCoreModule* core )
         if ( table && table->type() == PartitionTable::TableType::gpt )
         {
             // So this is a BIOS system, and the bootloader will be installed on a GPT system
-            for ( const auto& partition : qAsConst( table->children() ) )
+            for ( const auto& partition : std::as_const( table->children() ) )
             {
                 using Calamares::Units::operator""_MiB;
                 if ( ( partition->activeFlags() & KPM_PARTITION_FLAG( BiosGrub ) )
