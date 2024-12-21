@@ -48,7 +48,7 @@ class UnpackEntry:
     :param destination:
     """
     __slots__ = ('source', 'sourcefs', 'destination', 'copied', 'total', 'exclude', 'excludeFile',
-                 'mountPoint', 'weight', 'condition')
+                 'mountPoint', 'weight', 'condition', 'optional')
 
     def __init__(self, source, sourcefs, destination):
         """
@@ -72,6 +72,7 @@ class UnpackEntry:
         self.mountPoint = None
         self.weight = 1
         self.condition = True
+        self.optional = False
 
     def is_file(self):
         return self.sourcefs == "file"
@@ -461,6 +462,7 @@ def run():
     for entry in libcalamares.job.configuration["unpack"]:
         source = os.path.abspath(entry["source"])
         sourcefs = entry["sourcefs"]
+        optional = entry.get("optional", False)
 
         if sourcefs not in supported_filesystems:
             libcalamares.utils.warning("The filesystem for \"{}\" ({}) is not supported by your current kernel".format(source, sourcefs))
@@ -468,9 +470,14 @@ def run():
             return (_("Bad unpackfs configuration"),
                     _("The filesystem for \"{}\" ({}) is not supported by your current kernel").format(source, sourcefs))
         if not os.path.exists(source):
-            libcalamares.utils.warning("The source filesystem \"{}\" does not exist".format(source))
-            return (_("Bad unpackfs configuration"),
-                    _("The source filesystem \"{}\" does not exist").format(source))
+            if optional:
+                libcalamares.utils.warning("The source filesystem \"{}\" does not exist but is marked as optional, skipping".format(source))
+                entry["condition"] = False
+                continue
+            else:
+                libcalamares.utils.warning("The source filesystem \"{}\" does not exist".format(source))
+                return (_("Bad unpackfs configuration"),
+                        _("The source filesystem \"{}\" does not exist").format(source))
         if sourcefs == "squashfs":
             if shutil.which("unsquashfs") is None:
                 libcalamares.utils.warning("Failed to find unsquashfs")

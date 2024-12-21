@@ -20,7 +20,7 @@ struct ParseResult
     QString errorMessage;
     int errorLine = -1;
     int errorColumn = -1;
-}
+};
 
 [[nodiscard]] inline ParseResult
 setXmlContent( QDomDocument& doc, const QByteArray& ba )

@@ -14,26 +14,26 @@
 
 #include <string>
 
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wcovered-switch-default"
-#pragma clang diagnostic ignored "-Wfloat-equal"
-#pragma clang diagnostic ignored "-Wweak-vtables"
-#pragma clang diagnostic ignored "-Wmissing-variable-declarations"
-#pragma clang diagnostic ignored "-Wold-style-cast"
-#pragma clang diagnostic ignored "-Wshadow-uncaptured-local"
-#pragma clang diagnostic ignored "-Wshadow-field-in-constructor"
-#pragma clang diagnostic ignored "-Wshadow-field"
-#pragma clang diagnostic ignored "-Wdocumentation"
-#pragma clang diagnostic ignored "-Wmissing-noreturn"
-#pragma clang diagnostic ignored "-Wreserved-identifier"
-#endif
+QT_WARNING_PUSH
+QT_WARNING_DISABLE_CLANG( "-Wcovered-switch-default" )
+QT_WARNING_DISABLE_CLANG( "-Wfloat-equal" )
+QT_WARNING_DISABLE_CLANG( "-Wweak-vtables" )
+QT_WARNING_DISABLE_CLANG( "-Wmissing-variable-declarations" )
+QT_WARNING_DISABLE_CLANG( "-Wold-style-cast" )
+QT_WARNING_DISABLE_CLANG( "-Wshadow-uncaptured-local" )
+QT_WARNING_DISABLE_CLANG( "-Wshadow-field-in-constructor" )
+QT_WARNING_DISABLE_CLANG( "-Wshadow-field" )
+QT_WARNING_DISABLE_CLANG( "-Wdocumentation" )
+QT_WARNING_DISABLE_CLANG( "-Wmissing-noreturn" )
+QT_WARNING_DISABLE_CLANG( "-Wreserved-identifier" )
 
 #undef slots
 #include <pybind11/pybind11.h>
 
 #include <pybind11/embed.h>
 #include <pybind11/eval.h>
+
+QT_WARNING_POP
 
 namespace Calamares
 {
@@ -54,8 +54,5 @@ namespace Python __attribute__( ( visibility( "hidden" ) ) )
 }  // namespace Python
 }  // namespace Calamares
 
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
 
 #endif

@@ -5,7 +5,6 @@
  *
  *   Calamares is Free Software: see the License-Identifier above.
  *
- *
  */
 
 /*
@@ -20,36 +19,34 @@
 #ifndef UTILS_BOOSTPYTHON_H
 #define UTILS_BOOSTPYTHON_H
 
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wreserved-id-macro"
-#pragma clang diagnostic ignored "-Wold-style-cast"
-#pragma clang diagnostic ignored "-Wzero-as-null-pointer-constant"
-#pragma clang diagnostic ignored "-Wextra-semi-stmt"
-#pragma clang diagnostic ignored "-Wall"
-#pragma clang diagnostic ignored "-Wimplicit-float-conversion"
-#pragma clang diagnostic ignored "-Wundef"
-#pragma clang diagnostic ignored "-Wdeprecated-dynamic-exception-spec"
-#pragma clang diagnostic ignored "-Wshadow-field-in-constructor"
-#pragma clang diagnostic ignored "-Wshadow"
-#pragma clang diagnostic ignored "-Wmissing-noreturn"
-#pragma clang diagnostic ignored "-Wcast-qual"
-#pragma clang diagnostic ignored "-Wcast-align"
-#pragma clang diagnostic ignored "-Wsign-conversion"
-#pragma clang diagnostic ignored "-Wdouble-promotion"
-#pragma clang diagnostic ignored "-Wredundant-parens"
-#pragma clang diagnostic ignored "-Wweak-vtables"
-#pragma clang diagnostic ignored "-Wdeprecated"
-#pragma clang diagnostic ignored "-Wmissing-field-initializers"
-#pragma clang diagnostic ignored "-Wdisabled-macro-expansion"
-#pragma clang diagnostic ignored "-Wdocumentation"
-#pragma clang diagnostic ignored "-Wcomma"
-#pragma clang diagnostic ignored "-Wunused-parameter"
-#pragma clang diagnostic ignored "-Wunused-template"
+QT_WARNING_PUSH
+QT_WARNING_DISABLE_CLANG( "-Wreserved-id-macro" )
+QT_WARNING_DISABLE_CLANG( "-Wold-style-cast" )
+QT_WARNING_DISABLE_CLANG( "-Wzero-as-null-pointer-constant" )
+QT_WARNING_DISABLE_CLANG( "-Wextra-semi-stmt" )
+QT_WARNING_DISABLE_CLANG( "-Wall" )
+QT_WARNING_DISABLE_CLANG( "-Wimplicit-float-conversion" )
+QT_WARNING_DISABLE_CLANG( "-Wundef" )
+QT_WARNING_DISABLE_CLANG( "-Wdeprecated-dynamic-exception-spec" )
+QT_WARNING_DISABLE_CLANG( "-Wshadow-field-in-constructor" )
+QT_WARNING_DISABLE_CLANG( "-Wshadow" )
+QT_WARNING_DISABLE_CLANG( "-Wmissing-noreturn" )
+QT_WARNING_DISABLE_CLANG( "-Wcast-qual" )
+QT_WARNING_DISABLE_CLANG( "-Wcast-align" )
+QT_WARNING_DISABLE_CLANG( "-Wsign-conversion" )
+QT_WARNING_DISABLE_CLANG( "-Wdouble-promotion" )
+QT_WARNING_DISABLE_CLANG( "-Wredundant-parens" )
+QT_WARNING_DISABLE_CLANG( "-Wweak-vtables" )
+QT_WARNING_DISABLE_CLANG( "-Wdeprecated" )
+QT_WARNING_DISABLE_CLANG( "-Wmissing-field-initializers" )
+QT_WARNING_DISABLE_CLANG( "-Wdisabled-macro-expansion" )
+QT_WARNING_DISABLE_CLANG( "-Wdocumentation" )
+QT_WARNING_DISABLE_CLANG( "-Wcomma" )
+QT_WARNING_DISABLE_CLANG( "-Wunused-parameter" )
+QT_WARNING_DISABLE_CLANG( "-Wunused-template" )
 
 // Actually for Python headers
-#pragma clang diagnostic ignored "-Wreserved-id-macro"
-#endif
+QT_WARNING_DISABLE_CLANG( "-Wreserved-id-macro" )
 
 #undef slots
 #include <boost/python.hpp>
@@ -58,8 +55,6 @@
 #include <boost/python/list.hpp>
 #include <boost/python/object.hpp>
 
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
+QT_WARNING_POP
 
 #endif

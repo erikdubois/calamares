@@ -18,6 +18,7 @@ properties:
                 excludeFile: { type: string }
                 exclude: { type: array, items: { type: string } }
                 weight: { type: integer, exclusiveMinimum: 0 }
+                optional: { type: boolean }
                 condition:
                     anyOf:
                       - type: boolean

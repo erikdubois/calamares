@@ -26,10 +26,8 @@ namespace CalamaresPython
 boost::python::object
 variantToPyObject( const QVariant& variant )
 {
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wswitch-enum"
-#endif
+    QT_WARNING_PUSH
+    QT_WARNING_DISABLE_CLANG( "-Wswitch-enum" )
 
 #if QT_VERSION < QT_VERSION_CHECK( 6, 0, 0 )
     const auto IntVariantType = QVariant::Int;
@@ -82,9 +80,7 @@ variantToPyObject( const QVariant& variant )
     default:
         return bp::object();
     }
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
+    QT_WARNING_POP
 }
 
 QVariant
