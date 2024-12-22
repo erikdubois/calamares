@@ -19,6 +19,8 @@
 #ifndef UTILS_BOOSTPYTHON_H
 #define UTILS_BOOSTPYTHON_H
 
+#include <qglobal.h>
+
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_CLANG( "-Wreserved-id-macro" )
 QT_WARNING_DISABLE_CLANG( "-Wold-style-cast" )

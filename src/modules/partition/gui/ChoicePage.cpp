@@ -586,8 +586,21 @@ ChoicePage::applyActionChoice( InstallChoice choice )
                  &ChoicePage::doAlongsideSetupSplitter,
                  Qt::UniqueConnection );
         break;
-    case InstallChoice::NoChoice:
     case InstallChoice::Manual:
+        if ( m_core->isDirty() )
+        {
+            ScanningDialog::run(
+                QtConcurrent::run(
+                    [ = ]
+                    {
+                        QMutexLocker locker( &m_coreMutex );
+                        m_core->revertDevice( selectedDevice() );
+                    } ),
+                [] {},
+                this );
+        }
+        break;
+    case InstallChoice::NoChoice:
         break;
     }
     updateNextEnabled();

@@ -239,6 +239,9 @@ list(APPEND CMAKE_AUTOMOC_MACRO_NAMES
         "K_EXPORT_PLASMA_DATAENGINE_WITH_JSON"
         "K_EXPORT_PLASMA_RUNNER"
 )
+if(POLICY CMP0171)
+    cmake_policy(SET CMP0177 NEW)
+endif()
 
 # CMake Modules
 include(CMakePackageConfigHelpers)
