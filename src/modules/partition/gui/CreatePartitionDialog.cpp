@@ -82,8 +82,7 @@ CreatePartitionDialog::CreatePartitionDialog( Device* device,
         m_ui->lvNameLineEdit->setValidator( validator );
     }
 
-    if ( device->partitionTable()->type() == PartitionTable::msdos
-         || device->partitionTable()->type() == PartitionTable::msdos_sectorbased )
+    if ( KPMHelpers::isMSDOSPartition( device->partitionTable()->type() ) )
     {
         initMbrPartitionTypeUi();
     }

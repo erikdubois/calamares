@@ -38,6 +38,8 @@ class Config : public QObject
     Q_PROPERTY( bool preCheckEncryption READ preCheckEncryption CONSTANT FINAL )
     Q_PROPERTY( bool showNotEncryptedBootMessage READ showNotEncryptedBootMessage CONSTANT FINAL )
 
+    Q_PROPERTY( bool lvmEnabled READ isLVMEnabled CONSTANT FINAL )
+
 public:
     Config( QObject* parent );
     ~Config() override = default;
@@ -174,6 +176,8 @@ public:
     /// @brief If zfs encryption should be allowed
     bool allowZfsEncryption() const { return m_allowZfsEncryption; }
 
+    bool isLVMEnabled() const { return m_isLVMEnabled; }
+
 public Q_SLOTS:
     void setInstallChoice( int );  ///< Translates a button ID or so to InstallChoice
     void setInstallChoice( InstallChoice );
@@ -208,6 +212,7 @@ private:
     bool m_allowManualPartitioning = true;
     bool m_preCheckEncryption = false;
     bool m_showNotEncryptedBootMessage = true;
+    bool m_isLVMEnabled = true;
 };
 
 /** @brief Given a set of swap choices, return a sensible value from it.

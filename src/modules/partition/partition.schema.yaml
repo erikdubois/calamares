@@ -20,6 +20,12 @@ properties:
             mountPoint: { type: string }
         additionalProperties: false
 
+    lvm:
+        type: object
+        properties:
+            enable: { type: boolean, default: true }
+        additionalProperties: false
+
     userSwapChoices: { type: array, items: { type: string, enum: [ none, reuse, small, suspend, file ] } }
     # ensureSuspendToDisk: { type: boolean, default: true }  # Legacy
     # neverCreateSwap: { type: boolean, default: false }  # Legacy

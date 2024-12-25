@@ -361,7 +361,7 @@ PartitionViewStep::next()
         {
             if ( !m_manualPartitionPage )
             {
-                m_manualPartitionPage = new PartitionPage( m_core );
+                m_manualPartitionPage = new PartitionPage( m_core, *m_config );
                 m_widget->addWidget( m_manualPartitionPage );
             }
 
