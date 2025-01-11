@@ -7,6 +7,56 @@ contributors are listed. Note that Calamares does not have a historical
 changelog -- this log starts with version 3.3.0. See CHANGES-3.2 for
 the history of the 3.2 series (2018-05 - 2022-08).
 
+# 3.3.14 (unreleased)
+
+This release contains contributions from (alphabetically by given name):
+ - Nobody yet!
+
+## Core ##
+ - Nothing yet!
+
+## Modules ##
+ - Nothing yet!
+
+
+# 3.3.13 (2024-12-31)
+
+This release contains contributions from (alphabetically by given name):
+ - Aaron Rainbolt
+ - Adriaan de Groot
+ - Anke Boersma
+ - Ching Hsü
+ - Jakob Petsovits
+ - Masato TOYOSHIMA
+ - Simon Quigley
+ - Vladyslav Prudius
+
+## Core ##
+ - Fewer compile warnings with most-recent Qt versions.
+ - Support systemd and consolekit block-suspend, not just KDE Plasma
+   block-suspend, during installation. (thanks Jakob, #2404)
+ 
+## Modules ##
+ - *dracut* module has more freedom to specify program options. (thanks Simon, #2401)
+ - *partition* module improved some user-visible messages. (thanks Masato, #2412)
+ - *partition* module re-scans available devices when selecting
+   "manual" partitioning mode, avoiding a crash. (thanks Masato, #2414)
+ - *partition* module can hide the LVM buttons during manual partitioning,
+   if the distro does not want to support LVM. (#2413)
+ - *partition* module can restrict what filesystems a user applies where,
+   e.g. ensuring EFI is a FAT32 partition. (thanks Aaron, #2400)
+ - *unpackfs* module supports skipping installation media if it
+   is not present, e.g. depending on how the live media is booted.
+   (thanks Simon, #2410)
+
+## Translations ##
+
+Calamares translations are usually done through Transifex, but
+some users provide translation updates via patches, instead.
+ - *uk* thanks Vladyslav Prudius
+ - *zh_CN* thanks Ching Hsü
+
+
 # 3.3.12 (2024-11-21)
 
 This release contains contributions from (alphabetically by given name):
