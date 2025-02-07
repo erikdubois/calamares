@@ -41,6 +41,7 @@
 #include "utils/Logger.h"
 #include "utils/Retranslator.h"
 #include "utils/Units.h"
+#include "utils/String.h"
 #include "widgets/PrettyRadioButton.h"
 
 #include <kpmcore/core/device.h>
@@ -689,6 +690,13 @@ ChoicePage::onHomeCheckBoxStateChanged()
 void
 ChoicePage::onLeave()
 {
+    Calamares::GlobalStorage* gs = Calamares::JobQueue::instance()->globalStorage();
+    if ( m_encryptWidget->state() == EncryptWidget::Encryption::Confirmed ) {
+        gs->insert( "passphrase", Calamares::String::obscure( m_encryptWidget->passphrase() ) );
+    }else{
+        gs->insert( "passphrase", "" );
+    }
+
     if ( m_config->installChoice() == InstallChoice::Alongside )
     {
         if ( m_afterPartitionSplitterWidget->splitPartitionSize() >= 0
